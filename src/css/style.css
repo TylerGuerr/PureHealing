@@ -1,0 +1,419 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: lato;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.bottomContainer {
+  padding: 0vh 0vh 6vh 0vh;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.bottomContainer #bottomLogoConatiner {
+  padding-top: 25px;
+  transform: scale(0.9);
+  text-align: center;
+}
+.bottomContainer #contact h2, .bottomContainer #businessHours h2 {
+  font-weight: 400;
+}
+.bottomContainer #contact h3, .bottomContainer #businessHours h3 {
+  font-weight: 200;
+}
+
+#headerContainer {
+  display: flex;
+  justify-content: space-around;
+  height: 101px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  border-bottom: 1px solid lightgray;
+  position: fixed;
+  z-index: 2;
+}
+#headerContainer #pureLogo {
+  transform: scale(0.8);
+  cursor: pointer;
+}
+#headerContainer #navigationMenus {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+#headerContainer #navigationMenus #home, #headerContainer #navigationMenus #about, #headerContainer #navigationMenus #services, #headerContainer #navigationMenus #contact, #headerContainer #navigationMenus #testimonials {
+  padding: 20px 15px;
+  display: inline-block;
+  position: relative;
+}
+#headerContainer #navigationMenus #home h3, #headerContainer #navigationMenus #home button, #headerContainer #navigationMenus #about h3, #headerContainer #navigationMenus #about button, #headerContainer #navigationMenus #services h3, #headerContainer #navigationMenus #services button, #headerContainer #navigationMenus #contact h3, #headerContainer #navigationMenus #contact button, #headerContainer #navigationMenus #testimonials h3, #headerContainer #navigationMenus #testimonials button {
+  font-weight: 400;
+  cursor: pointer;
+  position: inline-block;
+  position: relative;
+  font-size: 18px;
+  border: none;
+  background: none;
+  padding-bottom: 5px;
+}
+#headerContainer #navigationMenus #home h3::after, #headerContainer #navigationMenus #home button::after, #headerContainer #navigationMenus #about h3::after, #headerContainer #navigationMenus #about button::after, #headerContainer #navigationMenus #services h3::after, #headerContainer #navigationMenus #services button::after, #headerContainer #navigationMenus #contact h3::after, #headerContainer #navigationMenus #contact button::after, #headerContainer #navigationMenus #testimonials h3::after, #headerContainer #navigationMenus #testimonials button::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffcc7f;
+  transform-origin: bottom center;
+  transition: transform 0.3s ease-out;
+}
+#headerContainer #navigationMenus #home h3:hover::after, #headerContainer #navigationMenus #home button:hover::after, #headerContainer #navigationMenus #about h3:hover::after, #headerContainer #navigationMenus #about button:hover::after, #headerContainer #navigationMenus #services h3:hover::after, #headerContainer #navigationMenus #services button:hover::after, #headerContainer #navigationMenus #contact h3:hover::after, #headerContainer #navigationMenus #contact button:hover::after, #headerContainer #navigationMenus #testimonials h3:hover::after, #headerContainer #navigationMenus #testimonials button:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom center;
+}
+#headerContainer #navigationMenus #services .dropdown-content, #headerContainer #navigationMenus #contact .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  width: 225%;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+#headerContainer #navigationMenus #services .dropdown-content a, #headerContainer #navigationMenus #contact .dropdown-content a {
+  display: block;
+  color: #000000;
+  padding: 5px;
+  height: 25px;
+  transition: 0.5s;
+  border-bottom: 1px solid lightgray;
+  text-decoration: none;
+}
+#headerContainer #navigationMenus #services .dropdown-content svg, #headerContainer #navigationMenus #contact .dropdown-content svg {
+  padding: 0px 5px 0px 5px;
+  vertical-align: middle;
+}
+#headerContainer #navigationMenus #services .dropdown-content a:hover, #headerContainer #navigationMenus #contact .dropdown-content a:hover {
+  background-color: #ffcc7f;
+  height: 28px;
+  transition: 0.3s;
+}
+#headerContainer #navigationMenus #services:hover .dropdown-content, #headerContainer #navigationMenus #contact:hover .dropdown-content {
+  display: block;
+}
+
+#mainContainer {
+  width: 100%;
+  position: relative;
+  height: 730px;
+  z-index: 1;
+}
+#mainContainer #imgContainer {
+  position: relative;
+  top: 80px;
+}
+#mainContainer #imgContainer img {
+  position: relative;
+  height: 730px;
+  width: 100%;
+  opacity: 25%;
+  object-fit: cover;
+}
+#mainContainer #textContainer {
+  position: relative;
+  bottom: 600px;
+  font-weight: 200;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+#mainContainer #textContainer #text1 {
+  width: 30%;
+  border-radius: 15px;
+  margin-left: 60px;
+}
+#mainContainer #textContainer #text1 h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 50px;
+}
+#mainContainer #textContainer #text1 p {
+  font-size: 25px;
+}
+#mainContainer #textContainer #text2 {
+  width: 41%;
+}
+#mainContainer #textContainer #text2 h2 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 30px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+}
+#mainContainer #textContainer #text2 #newClientsHeader {
+  width: 30%;
+}
+#mainContainer #textContainer #text2 #existingHeader {
+  width: 60%;
+}
+#mainContainer #textContainer #text2 #getStarted, #mainContainer #textContainer #text2 #requestSession {
+  font-size: 33px;
+  font-weight: 400;
+}
+#mainContainer #textContainer #text2 h3 {
+  font-size: 25px;
+  font-weight: 200;
+}
+#mainContainer #textContainer #text2 button {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 15px 40px;
+  margin-bottom: 20px;
+  font-size: 26px;
+  opacity: 50%;
+  background-color: #f5ac41;
+  cursor: pointer;
+  color: rgb(235, 235, 235);
+  border: none;
+  border-radius: 2px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+#mainContainer #textContainer #text2 button:hover {
+  box-shadow: rgba(25, 25, 45, 0.1) 0px 7px 15px -6px, rgba(0, 0, 0, 0.3) 0px 4.5px 9px -4.5px;
+  opacity: 80%;
+  padding: 15.25px 40.25px;
+  color: whitesmoke;
+  transition: 0.3s;
+}
+#mainContainer .bottomContainer {
+  position: relative;
+  bottom: 62vh;
+}
+
+#overviewMainContainer {
+  width: 100%;
+  position: relative;
+  height: 500px;
+}
+#overviewMainContainer #overviewImgContainer {
+  position: relative;
+  top: 80px;
+}
+#overviewMainContainer #overviewImgContainer img {
+  position: relative;
+  height: 455px;
+  width: 100%;
+  opacity: 45%;
+  object-fit: cover;
+}
+#overviewMainContainer #overviewTextContainer {
+  position: relative;
+  font-weight: 200;
+  bottom: 225px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+#overviewMainContainer #serviceOverviewText {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 22px;
+  text-align: center;
+  padding: 0px 25vh 0px 25vh;
+  bottom: 75px;
+}
+#overviewMainContainer #overviewImgContainer2 {
+  position: relative;
+  bottom: 75px;
+}
+#overviewMainContainer #overviewImgContainer2 img {
+  position: relative;
+  height: 550px;
+  width: 100%;
+  opacity: 29%;
+  object-fit: cover;
+}
+#overviewMainContainer #servicesContainer {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 550px;
+}
+#overviewMainContainer #servicesContainer #svg1, #overviewMainContainer #servicesContainer #svg2, #overviewMainContainer #servicesContainer #svg3 {
+  position: relative;
+}
+#overviewMainContainer #servicesContainer #svg1 svg, #overviewMainContainer #servicesContainer #svg2 svg, #overviewMainContainer #servicesContainer #svg3 svg {
+  transform: scale(2.7);
+  background-color: rgb(255, 255, 255);
+  padding: 15px;
+  border-radius: 21px;
+}
+#overviewMainContainer #servicesContainer #service1, #overviewMainContainer #servicesContainer #service2, #overviewMainContainer #servicesContainer #service3 {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0px 20px 0px 20px;
+  padding: 0px 30px 0px 30px;
+  border-radius: 14px;
+  text-align: center;
+  width: 20%;
+}
+#overviewMainContainer #servicesContainer #service1 #serviceHeader, #overviewMainContainer #servicesContainer #service2 #serviceHeader, #overviewMainContainer #servicesContainer #service3 #serviceHeader {
+  padding-top: 15px;
+}
+#overviewMainContainer #servicesContainer #service1 #serviceHeader2, #overviewMainContainer #servicesContainer #service2 #serviceHeader2, #overviewMainContainer #servicesContainer #service3 #serviceHeader2 {
+  margin-top: -5px;
+}
+#overviewMainContainer #servicesContainer #service1 #serviceHeader3, #overviewMainContainer #servicesContainer #service2 #serviceHeader3, #overviewMainContainer #servicesContainer #service3 #serviceHeader3 {
+  padding-top: 45px;
+  overflow: hidden;
+}
+#overviewMainContainer #servicesContainer #service1 #learnMore, #overviewMainContainer #servicesContainer #service2 #learnMore, #overviewMainContainer #servicesContainer #service3 #learnMore {
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 10px 0px;
+  font-size: 15px;
+  border: none;
+  color: white;
+  background-color: #f5ac41;
+  opacity: 50%;
+  cursor: pointer;
+}
+#overviewMainContainer #servicesContainer #service1 #learnMore:hover, #overviewMainContainer #servicesContainer #service2 #learnMore:hover, #overviewMainContainer #servicesContainer #service3 #learnMore:hover {
+  opacity: 100%;
+  transition: 0.3s;
+}
+#overviewMainContainer .bottomContainer {
+  position: relative;
+  bottom: 65vh;
+}
+
+#newClientMainContainer {
+  width: 100%;
+  position: relative;
+  height: 500px;
+}
+#newClientMainContainer #newClientImgContainer {
+  position: relative;
+  top: 80px;
+}
+#newClientMainContainer #newClientImgContainer img {
+  position: relative;
+  height: 89vh;
+  width: 100%;
+  opacity: 45%;
+  object-fit: cover;
+}
+#newClientMainContainer #newClientTextContainer {
+  position: relative;
+  font-weight: 200;
+  bottom: 225px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+#newClientMainContainer #theBasic {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  bottom: 10.2vh;
+  height: 50vh;
+  background-color: #efebe8;
+  padding: 0px 20vh 0px 20vh;
+  border-bottom: 1px solid lightgray;
+}
+#newClientMainContainer #theBasic #section1 {
+  width: 50%;
+  padding: 10vh 20vh 0vh 0vh;
+}
+#newClientMainContainer #theBasic #section1 h2 {
+  font-size: 45px;
+}
+#newClientMainContainer #theBasic #section1 h3 {
+  font-size: 20px;
+  font-weight: 400;
+  padding-left: 5vh;
+}
+#newClientMainContainer #theBasic #section2 {
+  padding: 5vh 0vh 0vh 13vh;
+}
+#newClientMainContainer #theBasic #section2 li {
+  font-weight: 400;
+  padding: 5px;
+  border-bottom: 1px solid lightgray;
+  width: 70%;
+}
+#newClientMainContainer #theFoundation {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  bottom: 10.2vh;
+  height: 50vh;
+  padding: 0px 20vh 0px 20vh;
+  border-bottom: 1px solid lightgray;
+}
+#newClientMainContainer #theFoundation #section1 {
+  padding: 10vh 0vh 0vh 18vh;
+}
+#newClientMainContainer #theFoundation #section1 h2 {
+  font-size: 45px;
+}
+#newClientMainContainer #theFoundation #section1 h3 {
+  font-size: 20px;
+  font-weight: 400;
+  padding-left: 5vh;
+}
+#newClientMainContainer #theFoundation #section2 {
+  width: 50%;
+  padding: 10vh 20vh 0vh 0vh;
+}
+#newClientMainContainer #theFoundation #section2 li {
+  font-weight: 400;
+  padding: 5px;
+  border-bottom: 1px solid lightgray;
+}
+#newClientMainContainer #theTransformation {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  bottom: 10.2vh;
+  height: 50vh;
+  background-color: #efebe8;
+  padding: 0px 20vh 0px 20vh;
+}
+#newClientMainContainer #theTransformation #section1 {
+  width: 40%;
+  padding: 10vh 0vh 0vh 0vh;
+}
+#newClientMainContainer #theTransformation #section1 h2 {
+  font-size: 45px;
+}
+#newClientMainContainer #theTransformation #section1 h3 {
+  font-size: 20px;
+  font-weight: 400;
+  padding-left: 5vh;
+}
+#newClientMainContainer #theTransformation #section2 {
+  padding: 5vh 30vh 0vh 0vh;
+}
+#newClientMainContainer #theTransformation #section2 li {
+  font-weight: 400;
+  padding: 5px;
+  border-bottom: 1px solid lightgray;
+}
+#newClientMainContainer .bottomContainer {
+  position: relative;
+  bottom: 5vh;
+}
+
+/*# sourceMappingURL=style.css.map */
