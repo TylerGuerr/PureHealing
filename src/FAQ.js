@@ -1,38 +1,36 @@
-import React from "react";
+import React from 'react';
 import './css/style.css';
-import home from './photos/home.jpg';
 import logo from './photos/PureHealingLogoEmpty.jpg';
+import past from './photos/Past-Clients.jpg';
 
-function CreateHome() {
-    return(
-    <div id="mainContainer">
-        <div id="imgContainer">
-            <img src={home}/>
-        </div>
-        <div id="textContainer">
-            <div id="text1">
-                <h1>Heal Your Chronic Digestive Issues</h1>
-                <p>Do you suffer from chronic diarrhea, 
-                    constipation, gas, bloating, etc.? Feel Like
-                    you've tried everything with no success? Have
-                    doctors told you there's nothing wrong with you,
-                    but you still feel terrible?
-                </p>
-                <p>I once did, I know what you going through, and <b>I'M
-                    HERE TO HELP.</b> Uncover the root causes of your digestive
-                    problems and finally feel better, for good!
-                </p>
+function CreateFAQ(){
+    return (
+        <>
+        <div id="faqOverall">
+            <div id="faqMainContainer">
+                <div id="faqImageContainer">
+                    <img src={past}/>
+                </div>
+                <div id="faqHeader">
+                    <h1>FAQ</h1>
+                </div>
+                <div id="questionsContainer">
+                    <div class="questionA">
+                        <h2>What is integrative and Functional Nutrition?</h2>
+                        <ul>
+                            <li><h3>Personalized nutrition care that focuses on identifying and resolving root causes of illness using therapeutic diets and dietary supplements with an emphasis on optimal gut health </h3></li>
+                        </ul>
+                        
+                    </div>
+                    <div class="questionB">
+                        <h2>Do you accept insurance?</h2>
+                        <ul>
+                            <li><h3>We do not bill insurance companies at this time. We can provide you with a superbill of services that you can submit to your insurance for possible reimbursement. Check with your insurance plan to determine if you have coverage.</h3></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div id="text2">
-                <h2 id="newClientsHeader">New Clients</h2>
-                <h3 id="getStarted"><em>Get Started Now!<br/>Schedule Your Free Call Here:</em></h3>
-                <a href="https://my.practicebetter.io/#/62f820492337f29905a94989/bookings?s=62f841252337f29905aa6df7"><button id="schedule">Schedule</button></a>
-                <h2 id="existingHeader">Existing and Past Clients</h2>
-                <h3 id="requestSession"><em>Request a Session:</em></h3>
-                <a href="/Email"><button id="request">Request</button></a>
-            </div>
-        </div>
-        <div class="bottomContainer">
+            <div class="bottomContainer">
                 <div id="bottomLogoConatiner">
                     <img src={logo}/>
                     <h4>Copyright &#xA9; All Rights Reserved</h4>
@@ -57,13 +55,14 @@ function CreateHome() {
                     <h3>Mon-Sat: Appointment Only</h3>
                     <h3>Sunday: Closed</h3>
                 </div>
+            </div>
         </div>
-    </div>
+        </>
     )
 }
 
-export default function Home(){
+export default function FAQ() {
     return (
-        <CreateHome />
-    );
+        <CreateFAQ />
+    )
 }

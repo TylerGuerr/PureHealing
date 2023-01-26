@@ -10,10 +10,18 @@ a {
 }
 
 .bottomContainer {
-  padding: 0vh 0vh 6vh 0vh;
+  padding: 0px 0px 20px 0px;
   display: flex;
   justify-content: space-evenly;
   width: 100%;
+}
+.bottomContainer svg {
+  transform: scale(1.5);
+  padding-right: 25px;
+}
+.bottomContainer svg:hover {
+  color: #ddcaff;
+  transition: 0.2s;
 }
 .bottomContainer #bottomLogoConatiner {
   padding-top: 25px;
@@ -46,12 +54,12 @@ a {
   justify-content: space-evenly;
   align-items: baseline;
 }
-#headerContainer #navigationMenus #home, #headerContainer #navigationMenus #about, #headerContainer #navigationMenus #services, #headerContainer #navigationMenus #contact, #headerContainer #navigationMenus #testimonials {
+#headerContainer #navigationMenus #home, #headerContainer #navigationMenus #about, #headerContainer #navigationMenus #services, #headerContainer #navigationMenus #faq, #headerContainer #navigationMenus #testimonials {
   padding: 20px 15px;
   display: inline-block;
   position: relative;
 }
-#headerContainer #navigationMenus #home h3, #headerContainer #navigationMenus #home button, #headerContainer #navigationMenus #about h3, #headerContainer #navigationMenus #about button, #headerContainer #navigationMenus #services h3, #headerContainer #navigationMenus #services button, #headerContainer #navigationMenus #contact h3, #headerContainer #navigationMenus #contact button, #headerContainer #navigationMenus #testimonials h3, #headerContainer #navigationMenus #testimonials button {
+#headerContainer #navigationMenus #home h3, #headerContainer #navigationMenus #about h3, #headerContainer #navigationMenus #services h3, #headerContainer #navigationMenus #faq h3, #headerContainer #navigationMenus #testimonials h3 {
   font-weight: 400;
   cursor: pointer;
   position: inline-block;
@@ -61,7 +69,7 @@ a {
   background: none;
   padding-bottom: 5px;
 }
-#headerContainer #navigationMenus #home h3::after, #headerContainer #navigationMenus #home button::after, #headerContainer #navigationMenus #about h3::after, #headerContainer #navigationMenus #about button::after, #headerContainer #navigationMenus #services h3::after, #headerContainer #navigationMenus #services button::after, #headerContainer #navigationMenus #contact h3::after, #headerContainer #navigationMenus #contact button::after, #headerContainer #navigationMenus #testimonials h3::after, #headerContainer #navigationMenus #testimonials button::after {
+#headerContainer #navigationMenus #home h3::after, #headerContainer #navigationMenus #home button::after, #headerContainer #navigationMenus #about h3::after, #headerContainer #navigationMenus #about button::after, #headerContainer #navigationMenus #services h3::after, #headerContainer #navigationMenus #services button::after, #headerContainer #navigationMenus #faq h3::after, #headerContainer #navigationMenus #faq button::after, #headerContainer #navigationMenus #testimonials h3::after, #headerContainer #navigationMenus #testimonials button::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -69,41 +77,42 @@ a {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #ffcc7f;
+  background-color: #ddcaff;
   transform-origin: bottom center;
   transition: transform 0.3s ease-out;
 }
-#headerContainer #navigationMenus #home h3:hover::after, #headerContainer #navigationMenus #home button:hover::after, #headerContainer #navigationMenus #about h3:hover::after, #headerContainer #navigationMenus #about button:hover::after, #headerContainer #navigationMenus #services h3:hover::after, #headerContainer #navigationMenus #services button:hover::after, #headerContainer #navigationMenus #contact h3:hover::after, #headerContainer #navigationMenus #contact button:hover::after, #headerContainer #navigationMenus #testimonials h3:hover::after, #headerContainer #navigationMenus #testimonials button:hover::after {
+#headerContainer #navigationMenus #home h3:hover::after, #headerContainer #navigationMenus #home button:hover::after, #headerContainer #navigationMenus #about h3:hover::after, #headerContainer #navigationMenus #about button:hover::after, #headerContainer #navigationMenus #services h3:hover::after, #headerContainer #navigationMenus #services button:hover::after, #headerContainer #navigationMenus #faq h3:hover::after, #headerContainer #navigationMenus #faq button:hover::after, #headerContainer #navigationMenus #testimonials h3:hover::after, #headerContainer #navigationMenus #testimonials button:hover::after {
   transform: scaleX(1);
   transform-origin: bottom center;
 }
-#headerContainer #navigationMenus #services .dropdown-content, #headerContainer #navigationMenus #contact .dropdown-content {
+#headerContainer #navigationMenus #services .dropdown-content {
   display: none;
   position: absolute;
+  top: 65px;
   background-color: white;
-  width: 225%;
+  width: 175%;
   overflow: auto;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
-#headerContainer #navigationMenus #services .dropdown-content a, #headerContainer #navigationMenus #contact .dropdown-content a {
+#headerContainer #navigationMenus #services .dropdown-content a {
   display: block;
   color: #000000;
-  padding: 5px;
+  padding: 10px;
   height: 25px;
   transition: 0.5s;
   border-bottom: 1px solid lightgray;
   text-decoration: none;
 }
-#headerContainer #navigationMenus #services .dropdown-content svg, #headerContainer #navigationMenus #contact .dropdown-content svg {
+#headerContainer #navigationMenus #services .dropdown-content svg {
   padding: 0px 5px 0px 5px;
   vertical-align: middle;
 }
-#headerContainer #navigationMenus #services .dropdown-content a:hover, #headerContainer #navigationMenus #contact .dropdown-content a:hover {
-  background-color: #ffcc7f;
+#headerContainer #navigationMenus #services .dropdown-content a:hover {
+  background-color: #ddcaff;
   height: 28px;
   transition: 0.3s;
 }
-#headerContainer #navigationMenus #services:hover .dropdown-content, #headerContainer #navigationMenus #contact:hover .dropdown-content {
+#headerContainer #navigationMenus #services:hover .dropdown-content {
   display: block;
 }
 
@@ -189,7 +198,7 @@ a {
 }
 #mainContainer .bottomContainer {
   position: relative;
-  bottom: 62vh;
+  bottom: 475px;
 }
 
 #overviewMainContainer {
@@ -203,19 +212,21 @@ a {
 }
 #overviewMainContainer #overviewImgContainer img {
   position: relative;
-  height: 455px;
+  height: 650px;
   width: 100%;
   opacity: 45%;
   object-fit: cover;
 }
 #overviewMainContainer #overviewTextContainer {
   position: relative;
-  font-weight: 200;
-  bottom: 225px;
+  bottom: 350px;
   font-size: 30px;
   display: flex;
   justify-content: center;
   width: 100%;
+}
+#overviewMainContainer #overviewTextContainer h1 {
+  font-weight: 200;
 }
 #overviewMainContainer #serviceOverviewText {
   position: relative;
@@ -224,36 +235,26 @@ a {
   flex-direction: column;
   font-size: 22px;
   text-align: center;
-  padding: 0px 25vh 0px 25vh;
+  padding: 0px 100px 0px 100px;
   bottom: 75px;
-}
-#overviewMainContainer #overviewImgContainer2 {
-  position: relative;
-  bottom: 75px;
-}
-#overviewMainContainer #overviewImgContainer2 img {
-  position: relative;
-  height: 550px;
-  width: 100%;
-  opacity: 29%;
-  object-fit: cover;
 }
 #overviewMainContainer #servicesContainer {
   display: flex;
   justify-content: center;
   position: relative;
-  bottom: 550px;
+  background-image: linear-gradient(to right, #fcfbff, #ddcaff);
+  height: 500px;
+  padding-top: 50px;
+  bottom: 10vh;
 }
 #overviewMainContainer #servicesContainer #svg1, #overviewMainContainer #servicesContainer #svg2, #overviewMainContainer #servicesContainer #svg3 {
   position: relative;
+  top: 5vh;
 }
 #overviewMainContainer #servicesContainer #svg1 svg, #overviewMainContainer #servicesContainer #svg2 svg, #overviewMainContainer #servicesContainer #svg3 svg {
   transform: scale(2.7);
-  background-color: rgb(255, 255, 255);
-  padding: 15px;
-  border-radius: 21px;
 }
-#overviewMainContainer #servicesContainer #service1, #overviewMainContainer #servicesContainer #service2, #overviewMainContainer #servicesContainer #service3 {
+#overviewMainContainer #servicesContainer #service1, #overviewMainContainer #servicesContainer #service2, #overviewMainContainer #servicesContainer #service3, #overviewMainContainer #servicesContainer #service4 {
   background-color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
@@ -263,35 +264,40 @@ a {
   border-radius: 14px;
   text-align: center;
   width: 20%;
+  height: 450px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 5px;
 }
-#overviewMainContainer #servicesContainer #service1 #serviceHeader, #overviewMainContainer #servicesContainer #service2 #serviceHeader, #overviewMainContainer #servicesContainer #service3 #serviceHeader {
-  padding-top: 15px;
+#overviewMainContainer #servicesContainer #service1 #serviceHeader, #overviewMainContainer #servicesContainer #service2 #serviceHeader, #overviewMainContainer #servicesContainer #service3 #serviceHeader, #overviewMainContainer #servicesContainer #service4 #serviceHeader {
+  margin-top: 12px;
 }
-#overviewMainContainer #servicesContainer #service1 #serviceHeader2, #overviewMainContainer #servicesContainer #service2 #serviceHeader2, #overviewMainContainer #servicesContainer #service3 #serviceHeader2 {
-  margin-top: -5px;
+#overviewMainContainer #servicesContainer #service1 #serviceHeader2, #overviewMainContainer #servicesContainer #service2 #serviceHeader2, #overviewMainContainer #servicesContainer #service3 #serviceHeader2, #overviewMainContainer #servicesContainer #service4 #serviceHeader2 {
+  margin-top: -10px;
 }
-#overviewMainContainer #servicesContainer #service1 #serviceHeader3, #overviewMainContainer #servicesContainer #service2 #serviceHeader3, #overviewMainContainer #servicesContainer #service3 #serviceHeader3 {
-  padding-top: 45px;
-  overflow: hidden;
+#overviewMainContainer #servicesContainer #service1 #serviceHeader3, #overviewMainContainer #servicesContainer #service2 #serviceHeader3, #overviewMainContainer #servicesContainer #service3 #serviceHeader3, #overviewMainContainer #servicesContainer #service4 #serviceHeader3 {
+  margin-top: -25px;
 }
-#overviewMainContainer #servicesContainer #service1 #learnMore, #overviewMainContainer #servicesContainer #service2 #learnMore, #overviewMainContainer #servicesContainer #service3 #learnMore {
+#overviewMainContainer #servicesContainer #service1 #serviceHeader4, #overviewMainContainer #servicesContainer #service2 #serviceHeader4, #overviewMainContainer #servicesContainer #service3 #serviceHeader4, #overviewMainContainer #servicesContainer #service4 #serviceHeader4 {
+  margin-top: -8px;
+}
+#overviewMainContainer #servicesContainer #service1 #learnMore, #overviewMainContainer #servicesContainer #service2 #learnMore, #overviewMainContainer #servicesContainer #service3 #learnMore, #overviewMainContainer #servicesContainer #service4 #learnMore {
   margin-bottom: 20px;
-  width: 100%;
+  width: 50%;
   padding: 10px 0px;
   font-size: 15px;
   border: none;
   color: white;
-  background-color: #f5ac41;
-  opacity: 50%;
+  border-radius: 5px;
+  background-color: rgb(146, 146, 255);
   cursor: pointer;
 }
-#overviewMainContainer #servicesContainer #service1 #learnMore:hover, #overviewMainContainer #servicesContainer #service2 #learnMore:hover, #overviewMainContainer #servicesContainer #service3 #learnMore:hover {
+#overviewMainContainer #servicesContainer #service1 #learnMore:hover, #overviewMainContainer #servicesContainer #service2 #learnMore:hover, #overviewMainContainer #servicesContainer #service3 #learnMore:hover, #overviewMainContainer #servicesContainer #service4 #learnMore:hover {
   opacity: 100%;
   transition: 0.3s;
+  background-color: rgb(117, 117, 255);
 }
 #overviewMainContainer .bottomContainer {
   position: relative;
-  bottom: 65vh;
+  bottom: 75px;
 }
 
 #newClientMainContainer {
@@ -305,7 +311,7 @@ a {
 }
 #newClientMainContainer #newClientImgContainer img {
   position: relative;
-  height: 89vh;
+  height: 1000px;
   width: 100%;
   opacity: 45%;
   object-fit: cover;
@@ -313,107 +319,633 @@ a {
 #newClientMainContainer #newClientTextContainer {
   position: relative;
   font-weight: 200;
-  bottom: 225px;
+  bottom: 900px;
   font-size: 30px;
   display: flex;
   justify-content: center;
   width: 100%;
 }
-#newClientMainContainer #theBasic {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  bottom: 10.2vh;
-  height: 50vh;
-  background-color: #efebe8;
-  padding: 0px 20vh 0px 20vh;
-  border-bottom: 1px solid lightgray;
+#newClientMainContainer #newClientTextContainer h1 {
+  font-weight: 100;
 }
-#newClientMainContainer #theBasic #section1 {
+#newClientMainContainer #packages {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 875px;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+#newClientMainContainer #packages #theBasic, #newClientMainContainer #packages #theTransformation, #newClientMainContainer #packages #theFoundation {
+  display: flex;
+  flex-direction: column;
+  height: 520px;
+  padding: 10px;
+  width: 100%;
+  background-color: whitesmoke;
+  opacity: 85%;
+}
+#newClientMainContainer #packages #theBasic #section1, #newClientMainContainer #packages #theTransformation #section1, #newClientMainContainer #packages #theFoundation #section1 {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#newClientMainContainer #packages #theBasic #section1 .sectionHeader, #newClientMainContainer #packages #theTransformation #section1 .sectionHeader, #newClientMainContainer #packages #theFoundation #section1 .sectionHeader {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0;
+}
+#newClientMainContainer #packages #theBasic #section1 .sectionHeader .bottomBorder, #newClientMainContainer #packages #theTransformation #section1 .sectionHeader .bottomBorder, #newClientMainContainer #packages #theFoundation #section1 .sectionHeader .bottomBorder {
+  border-bottom: 1px solid black;
   width: 50%;
-  padding: 10vh 20vh 0vh 0vh;
+  margin-left: 75px;
+  margin-bottom: 16px;
 }
-#newClientMainContainer #theBasic #section1 h2 {
-  font-size: 45px;
+#newClientMainContainer #packages #theBasic #section1 h3, #newClientMainContainer #packages #theTransformation #section1 h3, #newClientMainContainer #packages #theFoundation #section1 h3 {
+  font-weight: 200;
 }
-#newClientMainContainer #theBasic #section1 h3 {
-  font-size: 20px;
+#newClientMainContainer #packages #theBasic #section1 .price, #newClientMainContainer #packages #theTransformation #section1 .price, #newClientMainContainer #packages #theFoundation #section1 .price {
+  font-size: 28px;
+  margin: 0;
+  padding: 0;
   font-weight: 400;
-  padding-left: 5vh;
 }
-#newClientMainContainer #theBasic #section2 {
-  padding: 5vh 0vh 0vh 13vh;
+#newClientMainContainer #packages #theBasic #section1 .price span, #newClientMainContainer #packages #theTransformation #section1 .price span, #newClientMainContainer #packages #theFoundation #section1 .price span {
+  font-size: 18px;
 }
-#newClientMainContainer #theBasic #section2 li {
+#newClientMainContainer #packages #theBasic #section2 h3, #newClientMainContainer #packages #theTransformation #section2 h3, #newClientMainContainer #packages #theFoundation #section2 h3 {
+  text-align: center;
+  font-weight: 500;
+}
+#newClientMainContainer #packages #theBasic #section2 h3 b, #newClientMainContainer #packages #theTransformation #section2 h3 b, #newClientMainContainer #packages #theFoundation #section2 h3 b {
+  font-weight: 600;
+}
+#newClientMainContainer #packages #theBasic #section2 h3 ul, #newClientMainContainer #packages #theTransformation #section2 h3 ul, #newClientMainContainer #packages #theFoundation #section2 h3 ul {
+  text-align: left;
+  padding-left: 25px;
+  list-style-type: circle;
+  font-weight: 200;
+}
+#newClientMainContainer #packages #theBasic #section2 h4, #newClientMainContainer #packages #theTransformation #section2 h4, #newClientMainContainer #packages #theFoundation #section2 h4 {
+  font-size: 14px;
+  padding: 10px;
   font-weight: 400;
-  padding: 5px;
-  border-bottom: 1px solid lightgray;
-  width: 70%;
 }
-#newClientMainContainer #theFoundation {
+#newClientMainContainer #packages #theBasic h2, #newClientMainContainer #packages #theTransformation h2, #newClientMainContainer #packages #theFoundation h2 {
+  font-size: 30px;
+  font-weight: 500;
+}
+#newClientMainContainer #packages #theTransformation {
   position: relative;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  bottom: 10.2vh;
-  height: 50vh;
-  padding: 0px 20vh 0px 20vh;
-  border-bottom: 1px solid lightgray;
+  background-color: #ddcaff;
+  padding: 45px 10px 10px 10px;
+  height: 530px;
+  bottom: 3vh;
+  border-radius: 5px;
+  opacity: 100%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-#newClientMainContainer #theFoundation #section1 {
-  padding: 10vh 0vh 0vh 18vh;
-}
-#newClientMainContainer #theFoundation #section1 h2 {
-  font-size: 45px;
-}
-#newClientMainContainer #theFoundation #section1 h3 {
-  font-size: 20px;
-  font-weight: 400;
-  padding-left: 5vh;
-}
-#newClientMainContainer #theFoundation #section2 {
-  width: 50%;
-  padding: 10vh 20vh 0vh 0vh;
-}
-#newClientMainContainer #theFoundation #section2 li {
-  font-weight: 400;
-  padding: 5px;
-  border-bottom: 1px solid lightgray;
-}
-#newClientMainContainer #theTransformation {
+#newClientMainContainer #schedule {
   position: relative;
+  bottom: 875px;
+  font-size: 30px;
   display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  bottom: 10.2vh;
-  height: 50vh;
-  background-color: #efebe8;
-  padding: 0px 20vh 0px 20vh;
+  flex-direction: column;
 }
-#newClientMainContainer #theTransformation #section1 {
-  width: 40%;
-  padding: 10vh 0vh 0vh 0vh;
+#newClientMainContainer #schedule #scheduleHeader, #newClientMainContainer #schedule #buttonContainer {
+  display: flex;
+  justify-content: center;
 }
-#newClientMainContainer #theTransformation #section1 h2 {
-  font-size: 45px;
-}
-#newClientMainContainer #theTransformation #section1 h3 {
-  font-size: 20px;
+#newClientMainContainer #schedule h3 {
   font-weight: 400;
-  padding-left: 5vh;
 }
-#newClientMainContainer #theTransformation #section2 {
-  padding: 5vh 30vh 0vh 0vh;
+#newClientMainContainer #schedule button {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 15px 40px;
+  margin-bottom: 20px;
+  font-size: 26px;
+  background-color: rgb(146, 146, 255);
+  cursor: pointer;
+  color: rgb(235, 235, 235);
+  border: none;
+  border-radius: 2px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
-#newClientMainContainer #theTransformation #section2 li {
-  font-weight: 400;
-  padding: 5px;
-  border-bottom: 1px solid lightgray;
+#newClientMainContainer #schedule button:hover {
+  box-shadow: rgba(25, 25, 45, 0.1) 0px 7px 15px -6px, rgba(0, 0, 0, 0.3) 0px 4.5px 9px -4.5px;
+  padding: 15.25px 40.25px;
+  color: whitesmoke;
+  background-color: rgb(134, 134, 251);
+  transition: 0.3s;
 }
 #newClientMainContainer .bottomContainer {
   position: relative;
-  bottom: 5vh;
+  bottom: 850px;
+}
+
+#imageContainer {
+  position: relative;
+}
+#imageContainer img {
+  position: relative;
+  height: 850px;
+  width: 100%;
+  opacity: 25%;
+  object-fit: cover;
+}
+
+#emailContainer {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  top: 150px;
+  padding-bottom: 50px;
+  opacity: 90%;
+}
+#emailContainer #formContainer {
+  background-color: whitesmoke;
+  border: 3px solid #e7e0fc;
+  padding: 10px 40px 20px 40px;
+  width: 40%;
+  border-radius: 6px;
+  opacity: 95%;
+}
+#emailContainer #formContainer h2 {
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 400;
+  margin: 15px 0px 0px 0px;
+}
+#emailContainer #formContainer h3 {
+  text-align: center;
+  font-size: 20px;
+  padding: 0;
+  font-weight: 400;
+}
+#emailContainer #formContainer form {
+  display: flex;
+  flex-direction: column;
+}
+#emailContainer #formContainer form input {
+  height: 25px;
+  font-size: 18px;
+  padding: 5px;
+  margin: 10px 0px 10px 0px;
+  border: 2px solid #e7e0fc;
+  border-radius: 5px;
+}
+#emailContainer #formContainer form input:focus, #emailContainer #formContainer form textarea:focus {
+  outline: none;
+  background-color: #e9ddff;
+}
+#emailContainer #formContainer form textarea {
+  font-family: lato;
+  font-size: 18px;
+  padding: 5px;
+  margin-top: 10px;
+  height: 150px;
+  border: 2px solid #e7e0fc;
+  border-radius: 5px;
+}
+#emailContainer #formContainer form textarea::placeholder, #emailContainer #formContainer form input::placeholder {
+  opacity: 60%;
+}
+#emailContainer #formContainer form #emailSubjectContainer {
+  width: 160%;
+}
+#emailContainer #formContainer form #emailSubjectContainer input {
+  width: 29%;
+  margin-right: 12px;
+}
+#emailContainer #formContainer form #sub {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  width: 25%;
+  margin-left: 220px;
+  margin-top: 30px;
+  height: 60px;
+  font-size: 25px;
+  border: none;
+  color: white;
+  background-color: rgb(146, 146, 255);
+}
+#emailContainer #formContainer form #sub:hover {
+  background-color: rgb(134, 134, 251);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+#existingClientMainContainer {
+  width: 100%;
+  position: relative;
+  height: 500px;
+}
+#existingClientMainContainer #imgContainer {
+  position: relative;
+  top: 80px;
+}
+#existingClientMainContainer #imgContainer img {
+  position: relative;
+  height: 800px;
+  width: 100%;
+  opacity: 45%;
+  object-fit: cover;
+}
+#existingClientMainContainer #existingClientsHeader {
+  position: relative;
+  font-weight: 200;
+  bottom: 700px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+#existingClientMainContainer #existingClientsHeader h1 {
+  font-weight: 100;
+}
+#existingClientMainContainer #existingPackages {
+  position: relative;
+  bottom: 700px;
+  display: flex;
+  justify-content: center;
+}
+#existingClientMainContainer #existingPackages .package {
+  width: 475px;
+  height: 325px;
+  margin: 15px;
+  padding: 25px;
+  border-radius: 5px;
+  background-color: white;
+  opacity: 80%;
+}
+#existingClientMainContainer #existingPackages .package .packageHeader {
+  font-size: 23px;
+}
+#existingClientMainContainer #existingPackages .package .bottomBorder {
+  border-bottom: 5px solid green;
+  margin: 20px 0px 15px 20px;
+  width: 50%;
+}
+#existingClientMainContainer #existingPackages .package .sessions {
+  font-size: 20px;
+}
+#existingClientMainContainer #existingPackages .package .sessions li {
+  padding: 15px 0px 15px 0px;
+  list-style-type: circle;
+}
+#existingClientMainContainer #scheduling {
+  position: relative;
+  bottom: 725px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#existingClientMainContainer #scheduling #header {
+  display: flex;
+  justify-content: center;
+}
+#existingClientMainContainer #scheduling #header h3 {
+  font-size: 40px;
+  font-weight: 400;
+}
+#existingClientMainContainer #scheduling #request {
+  display: flex;
+  justify-content: center;
+}
+#existingClientMainContainer #scheduling #request button {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 15px 40px;
+  margin-bottom: 20px;
+  font-size: 26px;
+  background-color: rgb(146, 146, 255);
+  cursor: pointer;
+  color: rgb(235, 235, 235);
+  border: none;
+  border-radius: 2px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+#existingClientMainContainer #scheduling #request button:hover {
+  box-shadow: rgba(25, 25, 45, 0.1) 0px 7px 15px -6px, rgba(0, 0, 0, 0.3) 0px 4.5px 9px -4.5px;
+  padding: 15.25px 40.25px;
+  color: whitesmoke;
+  background-color: rgb(134, 134, 251);
+  transition: 0.3s;
+}
+#existingClientMainContainer .bottomContainer {
+  position: relative;
+  bottom: 700px;
+}
+
+#aboutOverall #aboutMainContainer {
+  position: absolute;
+  top: 100px;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: whitesmoke;
+}
+#aboutOverall #aboutMainContainer #aboutDescription {
+  margin-left: 20px;
+}
+#aboutOverall #aboutMainContainer #aboutDescription h1 {
+  font-size: 40px;
+  font-weight: 400;
+}
+#aboutOverall #aboutMainContainer #aboutDescription h2 {
+  position: relative;
+  right: 50px;
+  font-size: 30px;
+  font-weight: 400;
+  background-color: #ddcaff;
+  padding: 18px 100px 18px 0px;
+  width: 30%;
+  text-align: end;
+}
+#aboutOverall #aboutMainContainer #aboutDescription p {
+  font-size: 21px;
+  font-weight: 200;
+}
+#aboutOverall #aboutMainContainer #aboutImageContainer img {
+  height: 600px;
+  width: 700px;
+  object-fit: cover;
+  margin: 0px 20px 0px 60px;
+  border: 5px solid #ddcaff;
+  border-radius: 10px;
+}
+#aboutOverall .bottomContainer {
+  position: relative;
+  top: 750px;
+}
+
+#faqOverall {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+#faqOverall #faqMainContainer {
+  position: absolute;
+  top: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 1200px;
+  height: 750px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#faqOverall #faqMainContainer #faqImageContainer {
+  position: relative;
+  top: 50px;
+}
+#faqOverall #faqMainContainer #faqImageContainer img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  opacity: 40%;
+}
+#faqOverall #faqMainContainer #faqHeader {
+  position: relative;
+  bottom: 75px;
+  padding-left: 50px;
+}
+#faqOverall #faqMainContainer #faqHeader h1 {
+  font-size: 50px;
+}
+#faqOverall #faqMainContainer #questionsContainer {
+  position: relative;
+  bottom: 80px;
+  padding: 0;
+  margin: 0;
+}
+#faqOverall #faqMainContainer #questionsContainer .questionA {
+  padding: 15px 50px 15px 50px;
+  background-color: rgb(232, 232, 232);
+}
+#faqOverall #faqMainContainer #questionsContainer .questionA ul {
+  list-style-type: circle;
+}
+#faqOverall #faqMainContainer #questionsContainer .questionB {
+  padding: 15px 50px 15px 50px;
+  background-color: white;
+}
+#faqOverall #faqMainContainer #questionsContainer .questionB ul {
+  list-style-type: circle;
+}
+#faqOverall .bottomContainer {
+  position: relative;
+  top: 925px;
+}
+
+#mealPlanningContainer {
+  width: 100%;
+  position: relative;
+  height: 500px;
+}
+#mealPlanningContainer #imgContainer {
+  position: relative;
+  top: 80px;
+}
+#mealPlanningContainer #imgContainer img {
+  position: relative;
+  height: 825px;
+  width: 100%;
+  opacity: 45%;
+  object-fit: cover;
+}
+#mealPlanningContainer #mealPlanningHeader {
+  position: relative;
+  font-weight: 200;
+  bottom: 725px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+#mealPlanningContainer #mealPlanningHeader h1 {
+  font-weight: 100;
+}
+#mealPlanningContainer #description {
+  position: relative;
+  bottom: 750px;
+  display: flex;
+  justify-content: center;
+  padding: 0px 300px 0px 300px;
+  font-size: 20px;
+  text-align: center;
+}
+#mealPlanningContainer #description a {
+  text-decoration: underline;
+}
+#mealPlanningContainer #description a:hover {
+  color: #f5ac41;
+  transition: 0.2s;
+}
+#mealPlanningContainer #contentContainer {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 750px;
+}
+#mealPlanningContainer #contentContainer #content {
+  width: 475px;
+  height: 300px;
+  margin: 15px;
+  padding: 25px;
+  border-radius: 5px;
+  background-color: white;
+  opacity: 80%;
+}
+#mealPlanningContainer #contentContainer #content #contentHeader {
+  font-size: 23px;
+  text-align: center;
+}
+#mealPlanningContainer #contentContainer #content .bottomBorder {
+  border-bottom: 5px solid green;
+  margin: 20px 0px 15px 120px;
+  width: 50%;
+}
+#mealPlanningContainer #contentContainer #content #contentPackage {
+  font-size: 20px;
+}
+#mealPlanningContainer #contentContainer #content #contentPackage li {
+  padding: 15px 0px 15px 0px;
+  list-style-type: circle;
+}
+#mealPlanningContainer #scheduling {
+  position: relative;
+  bottom: 775px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#mealPlanningContainer #scheduling #header {
+  display: flex;
+  justify-content: center;
+}
+#mealPlanningContainer #scheduling #header h3 {
+  font-size: 40px;
+  font-weight: 400;
+}
+#mealPlanningContainer #scheduling #request {
+  display: flex;
+  justify-content: center;
+}
+#mealPlanningContainer #scheduling #request button {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 15px 40px;
+  margin-bottom: 20px;
+  font-size: 26px;
+  background-color: rgb(146, 146, 255);
+  cursor: pointer;
+  color: rgb(235, 235, 235);
+  border: none;
+  border-radius: 2px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+#mealPlanningContainer #scheduling #request button:hover {
+  box-shadow: rgba(25, 25, 45, 0.1) 0px 7px 15px -6px, rgba(0, 0, 0, 0.3) 0px 4.5px 9px -4.5px;
+  padding: 15.25px 40.25px;
+  color: whitesmoke;
+  background-color: rgb(134, 134, 251);
+  transition: 0.3s;
+}
+#mealPlanningContainer .bottomContainer {
+  position: relative;
+  bottom: 760px;
+}
+
+#testimonialContainer {
+  height: 500px;
+}
+#testimonialContainer #testimonialImgContainer img {
+  position: relative;
+  height: 850px;
+  width: 100%;
+  opacity: 45%;
+  object-fit: cover;
+  z-index: -1;
+}
+#testimonialContainer span {
+  position: relative;
+  font-size: 50px;
+  left: 305px;
+  top: 150px;
+  background-color: #ddcaff;
+  padding: 25px 30px 0px 30px;
+  border-radius: 40px;
+  z-index: 0;
+}
+#testimonialContainer #testimonialHeaderSection {
+  position: relative;
+  font-weight: 200;
+  bottom: 800px;
+  font-size: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  width: 100%;
+  z-index: 1;
+}
+#testimonialContainer #testimonialHeaderSection h1, #testimonialContainer #testimonialHeaderSection h2 {
+  font-weight: 100;
+}
+#testimonialContainer #testimonialHeaderSection #request {
+  display: flex;
+  justify-content: center;
+}
+#testimonialContainer #testimonialHeaderSection #request button {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 15px 40px;
+  margin-bottom: 20px;
+  font-size: 26px;
+  background-color: rgb(146, 146, 255);
+  cursor: pointer;
+  color: rgb(235, 235, 235);
+  border: none;
+  border-radius: 2px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+#testimonialContainer #testimonialHeaderSection #request button:hover {
+  box-shadow: rgba(25, 25, 45, 0.1) 0px 7px 15px -6px, rgba(0, 0, 0, 0.3) 0px 4.5px 9px -4.5px;
+  padding: 15.25px 40.25px;
+  color: whitesmoke;
+  background-color: rgb(134, 134, 251);
+  transition: 0.3s;
+}
+#testimonialContainer #testimonialMain {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  bottom: 775px;
+}
+#testimonialContainer #testimonialMain .cardContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 500px;
+  height: 510px;
+  background-color: whitesmoke;
+  opacity: 80%;
+}
+#testimonialContainer #testimonialMain .cardContainer .testimonialHeader, #testimonialContainer #testimonialMain .cardContainer .testimonialContent {
+  padding: 10px;
+  text-align: center;
+}
+#testimonialContainer #testimonialMain .cardContainer .clientInformation {
+  padding: 0px 30px 0px 20px;
+  margin-bottom: 10px;
+  background-color: #ddcaff;
+  width: 30%;
+  text-align: end;
+  font-size: 16px;
+}
+#testimonialContainer .bottomContainer {
+  position: relative;
+  bottom: 725px;
 }
 
 /*# sourceMappingURL=style.css.map */

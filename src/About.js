@@ -1,38 +1,25 @@
 import React from "react";
 import './css/style.css';
-import home from './photos/home.jpg';
-import logo from './photos/PureHealingLogoEmpty.jpg';
+import Headshot from './photos/Headshot.jpg';
+import logo from './photos/PureHealingLogoEmpty.jpg'
 
-function CreateHome() {
-    return(
-    <div id="mainContainer">
-        <div id="imgContainer">
-            <img src={home}/>
-        </div>
-        <div id="textContainer">
-            <div id="text1">
-                <h1>Heal Your Chronic Digestive Issues</h1>
-                <p>Do you suffer from chronic diarrhea, 
-                    constipation, gas, bloating, etc.? Feel Like
-                    you've tried everything with no success? Have
-                    doctors told you there's nothing wrong with you,
-                    but you still feel terrible?
-                </p>
-                <p>I once did, I know what you going through, and <b>I'M
-                    HERE TO HELP.</b> Uncover the root causes of your digestive
-                    problems and finally feel better, for good!
-                </p>
+function CreateAbout() {
+    return (
+        <>
+        <div id="aboutOverall">
+            <div id="aboutMainContainer">
+                <div id="aboutDescription">
+                    <h2>About Me</h2>
+                    <h1>Megan Barahona, MS, RDN</h1>
+                    <p>Megan Barahona is a Registered Dietitian Nutritionist with a Master’s in Nutritional Science. She is also certified in IFMNT (Integrative and Functional Medical Nutrition Therapy).</p>
+                    <p>After Megan was diagnosed with Crohn’s disease at age 17, she discovered the power of nutrition. This sparked her enthusiasm for helping others achieve optimal wellness through personalized nutrition therapy. Megan combines knowledge with compassion and empathy for a unique healthcare provider experience.</p>
+                    <p>Megan has over 6 years of healthcare experience in a variety of settings including: UCI Medical Center and Kaiser Permanente. She specializes in digestive health, is fluent in Spanish, and is passionate about managing chronic illness with a holistic approach.</p>
+                </div>
+                <div id="aboutImageContainer">
+                    <img src={Headshot} />
+                </div>
             </div>
-            <div id="text2">
-                <h2 id="newClientsHeader">New Clients</h2>
-                <h3 id="getStarted"><em>Get Started Now!<br/>Schedule Your Free Call Here:</em></h3>
-                <a href="https://my.practicebetter.io/#/62f820492337f29905a94989/bookings?s=62f841252337f29905aa6df7"><button id="schedule">Schedule</button></a>
-                <h2 id="existingHeader">Existing and Past Clients</h2>
-                <h3 id="requestSession"><em>Request a Session:</em></h3>
-                <a href="/Email"><button id="request">Request</button></a>
-            </div>
-        </div>
-        <div class="bottomContainer">
+            <div class="bottomContainer">
                 <div id="bottomLogoConatiner">
                     <img src={logo}/>
                     <h4>Copyright &#xA9; All Rights Reserved</h4>
@@ -57,13 +44,14 @@ function CreateHome() {
                     <h3>Mon-Sat: Appointment Only</h3>
                     <h3>Sunday: Closed</h3>
                 </div>
+            </div>
         </div>
-    </div>
+        </>
     )
 }
 
-export default function Home(){
-    return (
-        <CreateHome />
-    );
+export default function About() {
+    return(
+            <CreateAbout />
+    )
 }

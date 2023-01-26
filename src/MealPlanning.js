@@ -1,38 +1,44 @@
-import React from "react";
+import React from 'react';
 import './css/style.css';
-import home from './photos/home.jpg';
+import past from './photos/Past-Clients.jpg';
 import logo from './photos/PureHealingLogoEmpty.jpg';
 
-function CreateHome() {
-    return(
-    <div id="mainContainer">
-        <div id="imgContainer">
-            <img src={home}/>
-        </div>
-        <div id="textContainer">
-            <div id="text1">
-                <h1>Heal Your Chronic Digestive Issues</h1>
-                <p>Do you suffer from chronic diarrhea, 
-                    constipation, gas, bloating, etc.? Feel Like
-                    you've tried everything with no success? Have
-                    doctors told you there's nothing wrong with you,
-                    but you still feel terrible?
-                </p>
-                <p>I once did, I know what you going through, and <b>I'M
-                    HERE TO HELP.</b> Uncover the root causes of your digestive
-                    problems and finally feel better, for good!
-                </p>
+function CreateMealPlanning() {
+    return (
+        <div id="mealPlanningContainer">
+            <div id="imgContainer">
+                <img src={past} />
             </div>
-            <div id="text2">
-                <h2 id="newClientsHeader">New Clients</h2>
-                <h3 id="getStarted"><em>Get Started Now!<br/>Schedule Your Free Call Here:</em></h3>
-                <a href="https://my.practicebetter.io/#/62f820492337f29905a94989/bookings?s=62f841252337f29905aa6df7"><button id="schedule">Schedule</button></a>
-                <h2 id="existingHeader">Existing and Past Clients</h2>
-                <h3 id="requestSession"><em>Request a Session:</em></h3>
-                <a href="/Email"><button id="request">Request</button></a>
+            <div id="mealPlanningHeader">
+                <h1>Meal Planning</h1>
             </div>
-        </div>
-        <div class="bottomContainer">
+            <div id="description">
+                <p>Meal plans can be purchased a-la-carte, or added onto the <a href='/NewClientPackages'><em>Basic Package</em></a>. Each meal plan will be customized to your preferences, lifestyle and health needs. You will receive recipes and grocery lists for all items on the meal plan. </p>
+            </div>
+            <div id="contentContainer">
+                <div id="content">
+                    <div id="contentHeader">
+                        <h1>Plans</h1>
+                    </div>
+                    <div class="bottomBorder"></div>
+                    <div id="contentPackage">
+                        <ul>
+                            <li>1 Week Plan: $85</li>
+                            <li>1 Month Plan: $300</li>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+            <div id="scheduling">
+                    <div id="header">
+                        <h3><em>Request Meal Planning!</em></h3>
+                    </div>
+                    <div id="request">
+                        <a href='/Email'><button>Request</button></a>
+                    </div>
+            </div>
+            <div class="bottomContainer">
                 <div id="bottomLogoConatiner">
                     <img src={logo}/>
                     <h4>Copyright &#xA9; All Rights Reserved</h4>
@@ -57,13 +63,13 @@ function CreateHome() {
                     <h3>Mon-Sat: Appointment Only</h3>
                     <h3>Sunday: Closed</h3>
                 </div>
+            </div>
         </div>
-    </div>
     )
 }
 
-export default function Home(){
+export default function MealPlanning() {
     return (
-        <CreateHome />
-    );
+        <CreateMealPlanning />
+    )
 }
