@@ -17,7 +17,7 @@ a {
         padding-right: 25px;
     }
     svg:hover{
-        color:#ddcaff;
+        color:rgb(146, 146, 255);
         transition: .2s;
     }
     #bottomLogoConatiner {
@@ -39,7 +39,7 @@ a {
     justify-content: space-around;
     height: 101px;
     width:100%;
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     border-bottom: 1px solid lightgray;
     position: fixed;
     z-index: 2;
@@ -236,6 +236,7 @@ a {
         text-align: center;
         padding: 0px 100px 0px 100px;
         bottom: 75px;
+        background-color: rgb(224, 224, 224);
     }
     #servicesContainer {
         display: flex;
@@ -244,7 +245,7 @@ a {
         background-image: linear-gradient(to right, #fcfbff , #ddcaff);
         height: 500px;
         padding-top: 50px;
-        bottom: 10vh;
+        bottom:75px;
         #svg1, #svg2, #svg3{
             position: relative;
             top: 5vh;
@@ -264,17 +265,28 @@ a {
             width: 20%;
             height: 450px;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 5px;
+            a {
+                text-decoration: underline;
+            }
+            a:hover {
+                color:rgb(146, 146, 255);
+                font-size: 16.5px;
+            }
             #serviceHeader {
+                font-size: 23px;
                 margin-top: 12px;
             }
             #serviceHeader2 {
                 margin-top: -10px;
+                font-size: 23px;
             }
             #serviceHeader3 {
                 margin-top: -25px;
+                font-size: 23px;
             }
             #serviceHeader4 {
                 margin-top: -8px;
+                font-size: 23px;
             }
             #learnMore{
                 margin-bottom: 20px;
@@ -547,7 +559,7 @@ a {
         top: 80px;
         img {
             position: relative;
-            height: 800px;
+            height: 850px;
             width: 100%;
             opacity: 45%;
             object-fit: cover;
@@ -556,18 +568,22 @@ a {
     #existingClientsHeader {
         position: relative;
         font-weight: 200;
-        bottom: 700px;
+        bottom: 775px;
         font-size: 30px;
-        display: flex;
-        justify-content: center;
         width: 100%;
+        text-align: center;
         h1 {
             font-weight: 100;
+        }
+        h3 {
+            font-weight: 100;
+            padding: 0px 150px 0px 150px;
+            font-size: 28px;
         }
     }
     #existingPackages{
         position:relative;
-        bottom: 700px;
+        bottom: 775px;
         display:flex;
         justify-content: center;
         .package {
@@ -580,15 +596,18 @@ a {
             opacity: 80%;
             .packageHeader {
                 font-size: 23px;
+                font-family:'Times New Roman', Times, serif;
+                text-align: center;
             }
             .bottomBorder {
                 border-bottom: 5px solid green;
-                margin: 20px 0px 15px 20px;
+                margin: 20px 0px 15px 115px;
                 width: 50%;
             }
             .sessions {
                 font-size: 20px;
                 li {
+                    margin-left: 85px;
                     padding: 15px 0px 15px 0px;
                     list-style-type: circle;
                 }
@@ -597,7 +616,7 @@ a {
     }
     #scheduling {
         position: relative;
-        bottom: 725px;
+        bottom: 800px;
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -626,7 +645,6 @@ a {
             }
             button:hover {
                 box-shadow: rgba(25, 25, 45, 0.1) 0px 7px 15px -6px, rgba(0, 0, 0, 0.3) 0px 4.5px 9px -4.5px;
-                padding: 15.25px 40.25px;
                 color: whitesmoke;
                 background-color: rgb(134, 134, 251);
                 transition: .3s;
@@ -635,7 +653,7 @@ a {
     }
     .bottomContainer {
         position: relative;
-        bottom: 700px;
+        bottom: 775px;
     }
 }
 #aboutOverall {
@@ -650,7 +668,7 @@ a {
             margin-left: 20px;
             h1 {
                 font-size: 40px;
-                font-weight: 400;
+                font-weight: 200;
             }
             h2 {
                 position: relative;
@@ -661,6 +679,7 @@ a {
                 padding: 18px 100px 18px 0px;
                 width: 30%;
                 text-align:end;
+                font-family: 'Times New Roman', Times, serif;
             }
             p {
                 font-size: 21px;
@@ -673,7 +692,7 @@ a {
                 width: 700px;
                 object-fit: cover;
                 margin: 0px 20px 0px 60px;
-                border: 5px solid #ddcaff;
+                box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
                 border-radius: 10px;
             }
         }
@@ -698,7 +717,7 @@ a {
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         #faqImageContainer {
             position: relative;
-            top: 50px;
+            top: 100px;
             img{
                 width: 100%;
                 height: 400px;
@@ -712,25 +731,32 @@ a {
             padding-left: 50px;
             h1 {
                 font-size: 50px;
+                font-family: 'Times New Roman', Times, serif;
             }
         }
         #questionsContainer {
             position: relative;
             bottom: 80px;
             padding: 0;
-            margin:0;
             .questionA {
                 padding: 15px 50px 15px 50px;
                 background-color: rgb(232, 232, 232);
                 ul {
                     list-style-type:circle;
+                    h3 {
+                        font-weight: 200;
+                    }
                 }
             }
             .questionB {
                 padding: 15px 50px 15px 50px;
                 background-color: white;
+                margin-bottom: 100px;
                 ul {
                     list-style-type:circle;
+                    h3 {
+                        font-weight: 200;
+                    }
                 }
             }
         }
@@ -749,7 +775,7 @@ a {
         top: 80px;
         img {
             position: relative;
-            height: 825px;
+            height: 850px;
             width: 100%;
             opacity: 45%;
             object-fit: cover;
@@ -758,28 +784,31 @@ a {
     #mealPlanningHeader {
         position: relative;
         font-weight: 200;
-        bottom: 725px;
+        bottom: 750px;
         font-size: 30px;
         display: flex;
         justify-content: center;
         width: 100%;
         h1 {
+
             font-weight: 100;
         }
     }
     #description {
         position: relative;
-        bottom: 750px;
+        bottom: 775px;
         display: flex;
         justify-content: center;
-        padding: 0px 300px 0px 300px;
-        font-size: 20px;
+        padding: 0px 250px 0px 250px;
+        font-size: 24px;
         text-align: center;
+        font-weight: 200;
         a {
             text-decoration: underline;
+            font-weight: 400;
         }
         a:hover {
-            color: #f5ac41;
+            color: rgb(134, 134, 251);;
             transition: .2s;
         }
     }
@@ -787,27 +816,29 @@ a {
         display: flex;
         justify-content: center;
         position:relative;
-        bottom: 750px;
+        bottom: 775px;
         #content {
-            width: 475px;
+            width: 400px;
             height: 300px;
             margin: 15px;
             padding: 25px;
             border-radius: 5px;
             background-color: white;
-            opacity: 80%;
+            opacity: 70%;
             #contentHeader {
-                font-size: 23px;
+                font-size: 20px;
                 text-align: center;
+                font-family: 'Times New Roman', Times, serif;
             }
             .bottomBorder {
                 border-bottom: 5px solid green;
-                margin: 20px 0px 15px 120px;
-                width: 50%;
+                margin: 20px 0px 15px 85px;
+                width: 60%;
             }
             #contentPackage {
                 font-size: 20px;
                 li {
+                    margin-left: 90px;
                     padding: 15px 0px 15px 0px;
                     list-style-type: circle;
                 }
@@ -817,18 +848,10 @@ a {
     
     #scheduling {
         position: relative;
-        bottom: 775px;
+        bottom: 720px;
         display: flex;
         justify-content: center;
         flex-direction: column;
-        #header {
-            display: flex; 
-            justify-content: center;
-            h3 {
-                font-size: 40px;
-                font-weight: 400;
-            }
-        }
         #request {
             display: flex; 
             justify-content: center;
@@ -846,7 +869,6 @@ a {
             }
             button:hover {
                 box-shadow: rgba(25, 25, 45, 0.1) 0px 7px 15px -6px, rgba(0, 0, 0, 0.3) 0px 4.5px 9px -4.5px;
-                padding: 15.25px 40.25px;
                 color: whitesmoke;
                 background-color: rgb(134, 134, 251);
                 transition: .3s;
@@ -855,7 +877,7 @@ a {
     }
     .bottomContainer {
         position: relative;
-        bottom: 760px;
+        bottom: 670px;
     }
 }
 #testimonialContainer {
@@ -870,58 +892,25 @@ a {
             z-index: -1;
         }
     }
-    span{
-        position: relative;
-        font-size: 50px;
-        left: 305px;
-        top: 150px;
-        background-color:#ddcaff;
-        padding:25px 30px 0px 30px;
-        border-radius: 40px;
-        z-index: 0;
-    }
     #testimonialHeaderSection {
         position: relative;
         font-weight: 200;
-        bottom: 800px;
+        bottom: 750px;
         font-size: 30px;
         display: flex;
         justify-content: space-around;
         align-items: baseline;
         width: 100%;
         z-index: 1;
-        h1, h2 {
+        h1 {
             font-weight: 100;
-        }
-        #request {
-            display: flex; 
-            justify-content: center;
-            button {
-                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                padding: 15px 40px;
-                margin-bottom: 20px;
-                font-size: 26px;
-                background-color: rgb(146, 146, 255);
-                cursor: pointer;
-                color: rgb(235, 235, 235);
-                border: none;
-                border-radius: 2px;
-                box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-            }
-            button:hover {
-                box-shadow: rgba(25, 25, 45, 0.1) 0px 7px 15px -6px, rgba(0, 0, 0, 0.3) 0px 4.5px 9px -4.5px;
-                padding: 15.25px 40.25px;
-                color: whitesmoke;
-                background-color: rgb(134, 134, 251);
-                transition: .3s;
-            }
         }
     }
     #testimonialMain {
         display: flex;
         justify-content: space-evenly;
         position: relative;
-        bottom: 775px;
+        bottom: 725px;
         .cardContainer {
             display: flex;
             justify-content: space-around;
@@ -929,10 +918,12 @@ a {
             width: 500px;
             height: 510px;
             background-color: whitesmoke;
+            border-radius: 5px;
             opacity: 80%;
-            .testimonialHeader, .testimonialContent {
-                padding: 10px;
-                text-align:center;
+            .testimonialContent {
+                font-size: 18px;
+                padding: 0px 30px 0px 30px;
+                font-style: italic;
             }
             .clientInformation {
                 padding: 0px 30px 0px 20px;
@@ -946,6 +937,322 @@ a {
     }
     .bottomContainer {
         position: relative;
-        bottom: 725px;
+        bottom: 660px;
+    }
+}
+
+@media (max-width: 750px) {
+    .bottomContainer{
+        padding: 0px 0px 60px 0px;
+        display: flex;
+        justify-content: space-evenly;
+        width: 510px;
+        height: 90px;
+        svg {
+            transform:scale(1);
+            padding-right: 25px;
+        }
+        #bottomLogoConatiner {
+            transform: scale(.4);
+        }
+        #contact, #businessHours {
+            position: relative;
+            right: 100px;
+            padding-right: 25px;
+            h2{
+                font-size: 15px;
+            }
+            h3 {
+                font-size: 10px;
+            }
+        }
+    }
+    #headerContainer {
+        width:510px;
+        height: 60px;
+        #pureLogo {
+            transform: scale(0.4);
+            position: relative;
+            left: 0px;
+            bottom: 7px;
+        }
+        #navigationMenus {
+            #home, #about, #services, #faq, #testimonials {
+                padding: 20px 5px;
+                display: inline-block;
+                position: relative;
+                right: 110px;
+                bottom: 8px;
+                h3 {
+                    position: relative;
+                    font-size: 12px;
+                }
+            }
+            #services {
+                .dropdown-content {
+                    top: 55px;
+                    width: 175%;
+                    font-size: 10px;
+                }
+                .dropdown-content a {
+                    display: block;
+                    color: #000000;           
+                    padding: 5px;
+                    height: 15px;
+                }
+            }
+        }
+    }
+    #mainContainer {
+        height: 730px;
+        #imgContainer {
+            top: 50px;
+            img {
+                height: 570px;
+            }
+        }
+        #textContainer{
+            bottom: 520px;
+            #text1 {
+                width: 50%;
+                margin-left: 10px;
+                h1 {
+                    font-size: 35px;
+                }
+                p {
+                    font-size: 20px;
+                }
+            }
+            #text2 {
+                width: 41%;
+                h2 {
+                    font-size: 26px;
+                }
+                #newClientsHeader {
+                    width: 50%;
+                }
+                #existingHeader {
+                    width: 80%;
+                }
+                #getStarted, #requestSession {
+                    font-size: 23px;
+                    font-weight: 400;
+                }
+                button {
+                    padding: 10px 20px;
+                    margin-bottom: 10px;
+                    font-size: 20px;
+                }
+            }
+        }
+        .bottomContainer {
+            position: relative;
+            bottom: 490px;
+        }
+    }
+    #overviewMainContainer {
+        #overviewImgContainer {
+            top: 0px;
+            img {
+                height: 600px;
+            }
+        }
+        #overviewTextContainer{
+            font-size: 25px;
+        }
+        #serviceOverviewText {
+            font-size: 19px;
+            bottom: 130px;
+        }
+        #servicesContainer {
+            flex-direction: column;
+            height: 1500px;
+            width: 100%;
+            bottom:130px;
+            padding-top: 20px;
+            #service1, #service2, #service3, #service4 {
+                margin: 10px 20px 10px 20px;
+                width: 415px;
+            }
+        }
+        .bottomContainer {
+            bottom: 120px;
+        }
+    }
+    #newClientMainContainer {
+        width: 100%;
+        position: relative;
+        height: 500px; 
+        #newClientImgContainer {
+            top: 0px;
+        }
+        #newClientTextContainer{
+            bottom: 950px;
+            font-size: 25px;
+        }
+        #packages {
+            bottom: 925px;
+            margin-left: 25px;
+            margin-right:25px;
+            #theBasic, #theTransformation, #theFoundation {
+                #section1 {
+                    width: 150px;
+                    .sectionHeader{
+                        h2 {
+                            font-size: 17px;
+                        }
+                        .bottomBorder {
+                            width: 50%;
+                            margin-left: 40px;
+                        }
+                    }
+                    h3 {
+                        font-size: 14px;
+                    }
+                    .price {
+                        font-size: 17px;
+                        span {
+                            font-size: 14px;
+                        }
+                    }
+                }
+                #section2 {
+                    h3 {
+                        font-size: 15px;
+                        ul {
+                            text-align: left;
+                            padding-left: 15px;
+                            font-size: 14px;
+                        }
+                    }
+                    h4 {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+        #schedule {
+            bottom: 925px;
+        }
+        .bottomContainer {
+            bottom: 900px;
+        }
+    }
+    #existingClientMainContainer {
+        #imgContainer {
+            top: 0px;
+            img {
+                height: 1300px;
+            }
+        }
+        #existingClientsHeader {
+            bottom: 1250px;
+            font-size: 25px;
+            h3 {
+                padding: 0px 75px 0px 75px;
+                font-size: 28px;
+            }
+        }
+        #existingPackages{
+            bottom: 1250px;
+            flex-direction: column;
+            .package {
+                width: 435px;
+                height: 275px;
+            }
+        }
+        #scheduling {
+            bottom: 1275px;
+        }
+        .bottomContainer {
+            bottom: 1250px;
+        }
+    }
+    #mealPlanningContainer {
+        #imgContainer {
+            top: 0px;
+            img {
+                height: 850px;
+            }
+        }
+        #mealPlanningHeader {
+            bottom: 800px;
+        }
+        #description {
+            bottom: 845px;
+            padding: 0px 25px 0px 25px;
+            font-size: 23px;
+        }
+        #contentContainer {
+            bottom: 850px;
+            #content {
+                width: 425px;
+                height: 275px;
+            }
+        }
+        
+        #scheduling {
+            bottom: 800px;
+        }
+        .bottomContainer {
+            bottom: 775px;
+        }
+    }
+    #aboutOverall {
+        #aboutMainContainer {
+            top: 60px;
+            flex-direction: column;
+            width: 92%;
+            #aboutDescription {
+                h2 {
+                    padding-left: 35px;
+                }
+            }
+            #aboutImageContainer {
+                img {
+                    position: relative;
+                    right: 55px;
+                    height: 500px;
+                    width: 465px;
+                }
+            }
+        }
+        .bottomContainer {
+            top: 1290px;
+        }
+    }
+    #faqOverall{
+        width: 100%;
+        #faqMainContainer {
+            top: 0px;
+            width: 510px;
+            height: 850px;
+        }
+    }
+    #testimonialContainer {
+        height: 500px;
+        #testimonialImgContainer {
+            img {
+                height: 1250px;
+            }
+        }
+        #testimonialHeaderSection {
+            bottom: 1200px;
+            font-size: 20px;
+        }
+        #testimonialMain {
+            flex-direction: column;
+            bottom: 1200px;
+            .cardContainer {
+                width: 95%;
+                margin: 0px 0px 15px 13px;
+                .clientInformation {
+                    width: 20%;
+                }
+            }
+        }
+        .bottomContainer {
+            bottom: 1150px;
+        }
     }
 }

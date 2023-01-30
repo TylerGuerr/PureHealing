@@ -25,7 +25,7 @@ function CreateEmail() {
         <div id="formContainer">
             <form ref={form} onSubmit={sendEmail}>
                 <h2>Contact Me</h2>
-                <h3><em>Send an email to request a follow up session!</em></h3>
+                <h3><em>Send an email to request a follow up session, meal plan or to leave me a review!</em></h3>
                     <input type="text" placeholder="Your Name" name="user_name" />
                     <div id="emailSubjectContainer">
                         <input type="email" placeholder="Your Email" name="user_email" />
