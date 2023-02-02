@@ -9,8 +9,8 @@ function CreateTestimonials() {
         <>
         <div id="testimonialContainer">
             <div id="testimonialImgContainer">
-            <img src={photo} />
-        </div>
+                <img src={photo} />
+            </div>
             <div id="testimonialHeaderSection">
                 <div id="testimonialHeader">
                     <h1>What My Clients Are Saying</h1>
@@ -33,6 +33,9 @@ function CreateTestimonials() {
                         <h3>-Lauren</h3>
                     </div>
                 </div>
+            </div>
+            <div id="reviewButton">
+                <a href="/Email"><button>Leave A Review!</button></a>
             </div>
             <div class="bottomContainer">
                 <div id="bottomLogoConatiner">

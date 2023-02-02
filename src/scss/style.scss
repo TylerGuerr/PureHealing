@@ -1,7 +1,7 @@
 body {
     padding: 0;
     margin: 0;
-    font-family:lato;
+    font-family:lato, 'Times New Roman', Times, serif;
 }
 a { 
     text-decoration: none;
@@ -100,10 +100,6 @@ a {
                 transition: .5s;
                 border-bottom: 1px solid lightgray;
                 text-decoration: none;
-            }
-            .dropdown-content svg{
-                padding: 0px 5px 0px 5px;
-                vertical-align: middle;
             }
             .dropdown-content a:hover {
                 background-color:#ddcaff;
@@ -236,7 +232,7 @@ a {
         text-align: center;
         padding: 0px 100px 0px 100px;
         bottom: 75px;
-        background-color: rgb(224, 224, 224);
+        background-color: whitesmoke;
     }
     #servicesContainer {
         display: flex;
@@ -323,7 +319,7 @@ a {
             height: 1000px;
             width: 100%;
             opacity: 45%;
-            object-fit: cover;
+            object-fit:cover;
         }
     }
     #newClientTextContainer{
@@ -448,7 +444,6 @@ a {
         }
         button:hover {
             box-shadow: rgba(25, 25, 45, 0.1) 0px 7px 15px -6px, rgba(0, 0, 0, 0.3) 0px 4.5px 9px -4.5px;
-            padding: 15.25px 40.25px;
             color: whitesmoke;
             background-color: rgb(134, 134, 251);
             transition: .3s;
@@ -459,25 +454,29 @@ a {
         bottom: 850px;
     }
 }
-#imageContainer {
-    position: relative;
-    img {
-        position: relative;
-        height: 850px;
-        width: 100%;
-        opacity: 25%;
-        object-fit: cover;
-    }
-}
 #emailContainer {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
     position: absolute;
     width: 100%;
-    top: 150px;
-    padding-bottom: 50px;
+    top: 350px;
+    height: 500px;
     opacity: 90%;
+    #imageContainer {
+        position: relative;
+        img {
+            position: relative;
+            height: 1100px;
+            width: 100%;
+            opacity: 25%;
+            object-fit: cover;
+        }
+    }
     #formContainer {
+        position: relative;
+        bottom: 700px;
         background-color: whitesmoke;
         border: 3px solid #e7e0fc;
         padding: 10px 40px 20px 40px;
@@ -533,9 +532,9 @@ a {
             }
             #sub {
                 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                width: 25%;
-                margin-left: 220px;
                 margin-top: 30px;
+                margin-left: 210px;
+                width: 150px;
                 height: 60px;
                 font-size: 25px;
                 border: none;
@@ -777,7 +776,7 @@ a {
             position: relative;
             height: 850px;
             width: 100%;
-            opacity: 45%;
+            opacity: 35%;
             object-fit: cover;
         }
     }
@@ -895,7 +894,7 @@ a {
     #testimonialHeaderSection {
         position: relative;
         font-weight: 200;
-        bottom: 750px;
+        bottom: 775px;
         font-size: 30px;
         display: flex;
         justify-content: space-around;
@@ -910,7 +909,7 @@ a {
         display: flex;
         justify-content: space-evenly;
         position: relative;
-        bottom: 725px;
+        bottom: 775px;
         .cardContainer {
             display: flex;
             justify-content: space-around;
@@ -935,29 +934,51 @@ a {
             }
         }
     }
+    #reviewButton {
+        display: flex; 
+        justify-content: center;
+        position: relative;
+        bottom: 750px;
+        button {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;                padding: 15px 40px;
+            margin-bottom: 20px;
+            font-size: 26px;
+            background-color: rgb(146, 146, 255);
+            cursor: pointer;
+            color: rgb(235, 235, 235);
+            border: none;
+            border-radius: 2px;
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        }
+        button:hover {
+            box-shadow: rgba(25, 25, 45, 0.1) 0px 7px 15px -6px, rgba(0, 0, 0, 0.3) 0px 4.5px 9px -4.5px;
+            color: whitesmoke;
+            background-color: rgb(134, 134, 251);
+            transition: .3s;
+        }
+    }
     .bottomContainer {
         position: relative;
-        bottom: 660px;
+        bottom: 740px;
     }
 }
-
-@media (max-width: 750px) {
+@media (min-width: 320px) and (max-width: 480px) {
     .bottomContainer{
         padding: 0px 0px 60px 0px;
         display: flex;
         justify-content: space-evenly;
-        width: 510px;
+        width: 100%;
         height: 90px;
         svg {
             transform:scale(1);
-            padding-right: 25px;
+            padding-top: 3px;
         }
         #bottomLogoConatiner {
-            transform: scale(.4);
+            transform: scale(.35);
         }
         #contact, #businessHours {
             position: relative;
-            right: 100px;
+            right: 120px;
             padding-right: 25px;
             h2{
                 font-size: 15px;
@@ -968,12 +989,12 @@ a {
         }
     }
     #headerContainer {
-        width:510px;
+        width:100%;
         height: 60px;
         #pureLogo {
             transform: scale(0.4);
             position: relative;
-            left: 0px;
+            right: 10px;
             bottom: 7px;
         }
         #navigationMenus {
@@ -981,7 +1002,7 @@ a {
                 padding: 20px 5px;
                 display: inline-block;
                 position: relative;
-                right: 110px;
+                right: 140px;
                 bottom: 8px;
                 h3 {
                     position: relative;
@@ -991,13 +1012,13 @@ a {
             #services {
                 .dropdown-content {
                     top: 55px;
-                    width: 175%;
-                    font-size: 10px;
+                    width: 220%;
+                    font-size: 13px;
                 }
                 .dropdown-content a {
                     display: block;
                     color: #000000;           
-                    padding: 5px;
+                    padding: 8px;
                     height: 15px;
                 }
             }
@@ -1072,7 +1093,7 @@ a {
             padding-top: 20px;
             #service1, #service2, #service3, #service4 {
                 margin: 10px 20px 10px 20px;
-                width: 415px;
+                width: 385px;
             }
         }
         .bottomContainer {
@@ -1092,8 +1113,8 @@ a {
         }
         #packages {
             bottom: 925px;
-            margin-left: 25px;
-            margin-right:25px;
+            margin-left: 0;
+            margin-right:0;
             #theBasic, #theTransformation, #theFoundation {
                 #section1 {
                     width: 150px;
@@ -1157,15 +1178,23 @@ a {
             bottom: 1250px;
             flex-direction: column;
             .package {
-                width: 435px;
+                width: 400px;
                 height: 275px;
+                .bottomBorder {
+                    margin: 20px 0px 15px 100px;
+                }
+                .sessions {
+                    li {
+                        margin-left: 50px;
+                    }
+                }
             }
         }
         #scheduling {
-            bottom: 1275px;
+            bottom: 1285px;
         }
         .bottomContainer {
-            bottom: 1250px;
+            bottom: 1275px;
         }
     }
     #mealPlanningContainer {
@@ -1192,10 +1221,10 @@ a {
         }
         
         #scheduling {
-            bottom: 800px;
+            bottom: 825px;
         }
         .bottomContainer {
-            bottom: 775px;
+            bottom: 800px;
         }
     }
     #aboutOverall {
@@ -1213,36 +1242,37 @@ a {
                     position: relative;
                     right: 55px;
                     height: 500px;
-                    width: 465px;
+                    width: 440px;
                 }
             }
         }
         .bottomContainer {
-            top: 1290px;
+            top: 1390px;
         }
     }
     #faqOverall{
         width: 100%;
         #faqMainContainer {
             top: 0px;
-            width: 510px;
-            height: 850px;
+            width: 100%;
+            height: 800px;
+            box-shadow: none;
         }
     }
     #testimonialContainer {
         height: 500px;
         #testimonialImgContainer {
             img {
-                height: 1250px;
+                height: 1300px;
             }
         }
         #testimonialHeaderSection {
-            bottom: 1200px;
+            bottom: 1250px;
             font-size: 20px;
         }
         #testimonialMain {
             flex-direction: column;
-            bottom: 1200px;
+            bottom: 1250px;
             .cardContainer {
                 width: 95%;
                 margin: 0px 0px 15px 13px;
@@ -1251,8 +1281,1165 @@ a {
                 }
             }
         }
+        #reviewButton {
+            bottom: 1235px;
+        }
         .bottomContainer {
-            bottom: 1150px;
+            bottom: 1230px;
+        }
+    }
+    #emailContainer {
+        #formContainer {
+            width: 70%;
+            h2 {
+                font-family: 'Times New Roman', Times, serif;
+                text-align: center;
+                font-size: 40px;
+                font-weight: 400;
+                margin: 15px 0px 0px 0px;
+            }
+            h3 {
+                text-align: center;
+                font-size: 20px;
+                padding: 0;
+                font-weight: 400;
+            }
+            form {
+                display: flex;
+                flex-direction: column;
+                input {
+                    height: 25px;
+                    font-size: 18px;
+                    padding: 5px;
+                    margin: 10px 0px 10px 0px;
+                    border: 2px solid #e7e0fc;
+                    border-radius: 5px;
+                }
+                input:focus, textarea:focus {
+                    outline: none;
+                    background-color: #e9ddff;
+                }
+                textarea {
+                    font-family: lato;
+                    font-size: 18px;
+                    padding: 5px;
+                    margin-top: 10px;
+                    height: 150px;
+                    border: 2px solid #e7e0fc;
+                    border-radius: 5px;
+                }
+                textarea::placeholder, input::placeholder {
+                    opacity: 60%;
+                }
+                #emailSubjectContainer {
+                    width: 160%;
+                    input {
+                        width: 27.6%;
+                        margin-right: 12px;
+                    }
+                }
+                #sub {
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    width: 25%;
+                    margin-left: 135px;
+                    margin-top: 30px;
+                    height: 60px;
+                    font-size: 25px;
+                    border: none;
+                    color: white;
+                    background-color: rgb(146, 146, 255);
+                }
+                #sub:hover {
+                    background-color: rgb(134, 134, 251);
+                    transition: .3s;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+    .bottomContainer{
+        width: 120%;
+        height: 90px;
+        justify-content: center;
+        position: relative;
+        right: 100px;
+        margin: 0px 0px 60px 0px;
+        svg {
+            transform:scale(1);
+        }
+        #bottomLogoConatiner {
+            transform: scale(.5);
+        }
+        #contact, #businessHours {
+            padding-right: 5px;
+            position: relative;
+            right: 50px;
+            h2{
+                font-size: 20px;
+            }
+            h3 {
+                font-size: 15px;
+            }
+        }
+    }
+    #headerContainer {
+        width:100%;
+        height: 70px;
+        #pureLogo {
+            transform: scale(0.5);
+            position: relative;
+            right: 10px;
+            bottom: 7px;
+        }
+        #navigationMenus {
+            #home, #about, #services, #faq, #testimonials {
+                padding: 20px 5px;
+                display: inline-block;
+                position: relative;
+                right: 100px;
+                bottom: 8px;
+                h3 {
+                    position: relative;
+                    font-size: 14px;
+                }
+            }
+            #services {
+                .dropdown-content {
+                    top: 55px;
+                    width: 200%;
+                    font-size: 13px;
+                }
+                .dropdown-content a {
+                    display: block;
+                    color: #000000;           
+                    padding: 5px;
+                    height: 15px;
+                }
+            }
+        }
+    }
+    #mainContainer {
+        height:730px;
+        width: 100%;
+        #imgContainer {
+            top: 50px;
+            img {
+                height: 500px;
+            }
+        }
+        #textContainer{
+            bottom: 415px;
+            #text1 {
+                width: 50%;
+                margin-left: 10px;
+                h1 {
+                    font-size: 35px;
+                }
+                p {
+                    font-size: 20px;
+                }
+            }
+            #text2 {
+                width: 41%;
+                h2 {
+                    font-size: 26px;
+                }
+                #newClientsHeader {
+                    width: 50%;
+                }
+                #existingHeader {
+                    width: 80%;
+                }
+                #getStarted, #requestSession {
+                    font-size: 23px;
+                    font-weight: 400;
+                }
+                button {
+                    padding: 10px 20px;
+                    margin-bottom: 10px;
+                    font-size: 20px;
+                }
+            }
+        }
+        .bottomContainer {
+            position: relative;
+            bottom: 390px;
+        }
+    }
+    #overviewMainContainer {
+        #overviewImgContainer {
+            top: 0px;
+            img {
+                height: 600px;
+            }
+        }
+        #overviewTextContainer{
+            font-size: 25px;
+        }
+        #serviceOverviewText {
+            font-size: 19px;
+            bottom: 130px;
+        }
+        #servicesContainer {
+            flex-direction: column;
+            align-items: center;
+            height: 1500px;
+            width: 100%;
+            bottom:130px;
+            padding-top: 20px;
+            #service1, #service2, #service3, #service4 {
+                margin: 15px 20px 15px 20px;
+                width: 450px;
+            }
+        }
+        .bottomContainer {
+            bottom: 120px;
+        }
+    }
+    #newClientMainContainer {
+        width: 100%;
+        position: relative;
+        height: 500px; 
+        #newClientImgContainer {
+            top: 0px;
+        }
+        #newClientTextContainer{
+            bottom: 950px;
+            font-size: 25px;
+        }
+        #packages {
+            bottom: 925px;
+            margin-left: 25px;
+            margin-right:25px;
+            #theBasic, #theTransformation, #theFoundation {
+                #section1 {
+                    width: 150px;
+                    .sectionHeader{
+                        h2 {
+                            width: 100%;
+                            margin-left: 30px;
+                            font-size: 17px;
+                        }
+                        .bottomBorder {
+                            width: 50%;
+                            margin-left: 70px;
+                        }
+                    }
+                    h3 {
+                        width: 100%;
+                        margin-left: 35px;
+                        font-size: 15px;
+                    }
+                    .price {
+                        width: 100%;
+                        margin-left: 33px;
+                        font-size: 18px;
+                        span {
+                            font-size: 15px;
+                        }
+                    }
+                }
+                #section2 {
+                    h3 {
+                        font-size: 15px;
+                        ul {
+                            text-align: left;
+                            padding-left: 15px;
+                            font-size: 14px;
+                        }
+                    }
+                    h4 {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+        #schedule {
+            bottom: 925px;
+        }
+        .bottomContainer {
+            bottom: 910px;
+        }
+    }
+    #existingClientMainContainer {
+        #imgContainer {
+            top: 0px;
+            img {
+                height: 1300px;
+            }
+        }
+        #existingClientsHeader {
+            bottom: 1250px;
+            font-size: 25px;
+            h3 {
+                padding: 0px 75px 0px 75px;
+                font-size: 28px;
+            }
+        }
+        #existingPackages{
+            bottom: 1250px;
+            flex-direction: column;
+            align-items: center;
+            .package {
+                width: 400px;
+                height: 275px;
+                .bottomBorder {
+                    margin: 20px 0px 15px 100px;
+                }
+                .sessions {
+                    li {
+                        margin-left: 50px;
+                    }
+                }
+            }
+        }
+        #scheduling {
+            bottom: 1240px;
+        }
+        .bottomContainer {
+            bottom: 1175px;
+        }
+    }
+    #mealPlanningContainer {
+        #imgContainer {
+            top: 0px;
+            img {
+                height: 850px;
+            }
+        }
+        #mealPlanningHeader {
+            bottom: 800px;
+        }
+        #description {
+            bottom: 845px;
+            padding: 0px 25px 0px 25px;
+            font-size: 23px;
+        }
+        #contentContainer {
+            bottom: 850px;
+            #content {
+                width: 425px;
+                height: 275px;
+            }
+        }
+        
+        #scheduling {
+            bottom: 825px;
+        }
+        .bottomContainer {
+            bottom: 750px;
+        }
+    }
+    #aboutOverall {
+        #aboutMainContainer {
+            top: 60px;
+            flex-direction: column;
+            width: 100%;
+            #aboutDescription {
+                width: 93%;
+            }
+            #aboutImageContainer {
+                width: 100%;
+                img {
+                    position: relative;
+                    right: 55px;
+                    height: 500px;
+                    width: 95%;
+                }
+            }
+        }
+        .bottomContainer {
+            top: 1150px;
+        }
+    }
+    #faqOverall{
+        width: 100%;
+        #faqMainContainer {
+            top: 0px;
+            width: 100%;
+            height: 800px;
+            box-shadow: none;
+        }
+    }
+    #testimonialContainer {
+        height: 500px;
+        #testimonialImgContainer {
+            img {
+                height: 1300px;
+            }
+        }
+        #testimonialHeaderSection {
+            bottom: 1250px;
+            font-size: 20px;
+        }
+        #testimonialMain {
+            flex-direction: column;
+            bottom: 1250px;
+            .cardContainer {
+                width: 95%;
+                margin: 0px 0px 15px 13px;
+                .clientInformation {
+                    width: 20%;
+                }
+            }
+        }
+        #reviewButton {
+            bottom: 1240px;
+        }
+        .bottomContainer {
+            bottom: 1230px;
+        }
+    }
+    #emailContainer {
+        width: 100%;
+        #formContainer {
+            width: 70%;
+            form {
+                #emailSubjectContainer {
+                    width: 160%;
+                    input {
+                        width: 28.9%;
+                    }
+                }
+                #sub {
+                    margin-left: 190px;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+    .bottomContainer{
+        width: 100%;
+        height: 90px;
+        justify-content: space-evenly;
+        position: relative;
+        right: 0px;
+        svg {
+            padding-right: 15px;
+        }
+    }
+    #headerContainer {
+        width:100%;
+        height: 90px;
+        #pureLogo {
+            transform: scale(0.6);
+        }
+        #navigationMenus {
+            #services {
+                .dropdown-content {
+                    width: 220%;
+                    font-size: 17px;
+                }
+                .dropdown-content a {
+                    height: 20px;
+                }
+            }
+        }
+    }
+    #mainContainer {
+        #imgContainer {
+            img {
+                height: 750px;
+            }
+        }
+        #textContainer{
+            bottom: 625px;
+            width: 100%;
+            #text1 {
+                width: 50%;
+            }
+        }
+        .bottomContainer {
+            position: relative;
+            bottom: 540px;
+        }
+    }
+    #overviewMainContainer {
+        #servicesContainer {
+            flex-direction: column;
+            align-items: center;
+            height: 1500px;
+            width: 100%;
+            bottom:130px;
+            padding-top: 20px;
+            #service1, #service2, #service3, #service4 {
+                margin: 15px 20px 15px 20px;
+                width: 450px;
+            }
+        }
+        .bottomContainer {
+            bottom: 120px;
+        }    
+    }
+    #newClientMainContainer {
+        #packages {
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+    }
+    #existingClientMainContainer {
+        .bottomContainer {
+            bottom: 800px;
+        }
+    }
+    #mealPlanningContainer {
+        #scheduling {
+            bottom: 750px;
+        }
+        .bottomContainer {
+            bottom: 725px;
+        }
+    }
+    #aboutOverall {
+        #aboutMainContainer {
+            top: 60px;
+            flex-direction: column;
+            width: 97%;
+            #aboutDescription {
+                width: 95%;
+            }
+            #aboutImageContainer {
+                width: 97%;
+                img {
+                    position: relative;
+                    right: 55px;
+                    height: 700px;
+                    width: 95%;
+                }
+            }
+        }
+        .bottomContainer {
+            top: 1300px;
+        }
+    }
+    #faqOverall{
+        width: 100%;
+        #faqMainContainer {
+            top: 0px;
+            width: 100%;
+            height: 800px;
+            box-shadow: none;
+        }
+    }
+    #testimonialContainer {
+        height: 500px;
+        #testimonialImgContainer {
+            img {
+                height: 1400px;
+            }
+        }
+        #testimonialHeaderSection {
+            bottom: 1300px;
+            font-size: 25px;
+        }
+        #testimonialMain {
+            flex-direction: column;
+            bottom: 1300px;
+            align-items: center;
+            .cardContainer {
+                width: 50%;
+                margin: 0px 0px 15px 13px;
+                .clientInformation {
+                    width: 20%;
+                }
+            }
+        }
+        #reviewButton {
+            bottom: 1280px;
+        }
+        .bottomContainer {
+            bottom: 1260px;
+        }
+    }
+    #emailContainer {
+        #formContainer {
+            width: 70%;
+            form {
+                #emailSubjectContainer {
+                    input {
+                        width: 29.5%;
+                    }
+                }
+                #sub {
+                    margin-left: 270px;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1025px) and (max-width: 1200px) {
+    #headerContainer {
+        width:100%;
+        height: 90px;
+        #pureLogo {
+            transform: scale(0.6);
+        }
+        #navigationMenus {
+            #home, #about, #services, #faq, #testimonials {
+                h3 {
+                    bottom: 5px;
+                    font-size: 17px;
+                }
+            }
+            #services {
+                .dropdown-content {
+                    width: 220%;
+                    font-size: 16px;
+                    top: 60px;
+                }
+                .dropdown-content a {
+                    height: 25px;
+                }
+            }
+        }
+    }
+    #mainContainer {
+        #imgContainer {
+            img {
+                height: 730px;
+                bottom: 80px;
+            }
+        }
+        #textContainer{
+            bottom: 650px;
+            #text1 {
+                h1 {
+                    font-size: 40px;
+                }
+                p {
+                    font-size: 28px;
+                }
+            }
+            #text2 {
+                h2 {
+                    font-size: 30px;
+                }
+                #newClientsHeader {
+                    width: 40%;
+                }
+                #existingHeader {
+                    width: 40%;
+                }
+                #getStarted, #requestSession {
+                    font-size: 25px;
+                }
+                button {
+                    font-size: 25px;
+                }
+            }
+        }
+        .bottomContainer {
+            bottom: 660px;
+        }
+    }
+    #overviewMainContainer {
+        #servicesContainer {
+            #service1, #service2, #service3, #service4 {
+                width: 700px;
+            }
+        }
+    }
+    #newClientMainContainer {
+        #packages {
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+    }
+    #mealPlanningContainer {
+        .bottomContainer {
+            bottom: 700px;
+        }
+    }
+    #aboutOverall {
+        #aboutMainContainer {
+            #aboutImageContainer {
+                img {
+                    height: 640px;
+                    width: 600px;
+                }
+            }
+        }
+        .bottomContainer {
+            top: 800px;
+        }
+    }
+    #faqOverall{
+        #faqMainContainer {
+            top: 0px;
+            height: 800px;
+            box-shadow: none;
+        }
+    }
+    #testimonialContainer {
+        height: 500px;
+        #testimonialImgContainer {
+            img {
+                height: 1400px;
+            }
+        }
+        #testimonialHeaderSection {
+            bottom: 1300px;
+            font-size: 25px;
+        }
+        #testimonialMain {
+            flex-direction: column;
+            bottom: 1300px;
+            align-items: center;
+            .cardContainer {
+                width: 50%;
+                margin: 0px 0px 15px 13px;
+                .clientInformation {
+                    width: 20%;
+                }
+            }
+        }
+        #reviewButton {
+            bottom: 1280px;
+        }
+        .bottomContainer {
+            bottom: 1260px;
+        }
+    }
+    #emailContainer {
+        #formContainer {
+            width: 70%;
+            form {
+                #emailSubjectContainer {
+                    input {
+                        width: 29.75%;
+                    }
+                }
+                #sub {
+                    margin-left: 340px;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1500px) and (max-width: 1824px) {
+    .bottomContainer{
+        width: 100%;
+        svg {
+            transform:scale(2);
+            padding-right: 25px;
+            padding-left: 15px;
+        }
+        #bottomLogoConatiner {
+            transform: scale(1);
+        }
+        #contact, #businessHours {
+            h2{
+                font-size: 30px;
+                font-weight:400;
+            }
+            h3 {
+                font-size: 25px;
+                font-weight: 200;
+            }
+        }
+    }
+    #headerContainer {
+        height: 130px;
+        width:100%;
+        #pureLogo {
+            transform: scale(1);
+            padding-top: 15px;
+        }
+        #navigationMenus {
+            #home, #about, #services, #faq, #testimonials {
+                padding: 25px 15px;
+                h3 {
+                    font-size: 23px;
+                }
+            }
+            #services {
+                .dropdown-content {
+                    width: 220%;
+                    top: 81px;
+                    font-size: 23px;
+                }
+            }
+        }
+    }
+    #mainContainer {
+        #textContainer{
+            bottom: 600px;
+            #text1 {
+                width: 40%;
+                margin-left: 60px;
+                h1 {
+                    font-size: 65px;
+                }
+                p {
+                    font-size: 34px;
+                }
+            }
+            #text2 {
+                width: 41%;
+                h2 {
+                    font-size: 40px;
+                    padding-bottom: 15px;
+                }
+                #getStarted, #requestSession {
+                    font-size: 35px;
+                }
+                button {
+                    font-size: 30px;
+                }
+            }
+        }
+        .bottomContainer {
+            bottom: 550px;
+        }
+    }
+    #overviewMainContainer { 
+        #overviewImgContainer {
+            img {
+                height: 700px;
+            }
+        }
+        #overviewTextContainer{
+            font-size: 40px;
+        }
+        #serviceOverviewText {
+            font-size: 30px;
+            bottom: 126px;
+        }
+        #servicesContainer {
+            height: 550px;
+            bottom:126px;
+            p {
+                font-size: 20px;
+            }
+            #svg1, #svg2, #svg3{
+                svg {
+                    transform: scale(3.5);
+                }
+            }
+            #service1, #service2, #service3, #service4 {
+                width: 20%;
+                height: 500px;
+                a:hover {
+                    font-size: 16.5px;
+                }
+                #serviceHeader {
+                    font-size: 28px;
+                }
+                #serviceHeader2 {
+                    font-size: 28px;
+                }
+                #serviceHeader3 {
+                    font-size: 28px;
+                }
+                #serviceHeader4 {
+                    font-size: 28px;
+                }
+                #learnMore{
+                    width: 60%;
+                    font-size: 23px;
+                }
+            }
+        }
+        .bottomContainer {
+            position: relative;
+            bottom: 100px;
+        }
+    }
+    #newClientMainContainer {
+        #newClientImgContainer {
+            img {
+                position: relative;
+                height: 1150px;
+                width: 100%;
+                opacity: 45%;
+                object-fit:cover;
+            }
+        }
+        #newClientTextContainer{
+            bottom: 1050px;
+            font-size: 40px;
+        }
+        #packages {
+            bottom: 1050px;
+            #theBasic, #theTransformation, #theFoundation {
+                height: 600px;
+                #section1 {
+                    .sectionHeader{
+                        h2{
+                            font-size: 35px;
+                        }
+                        .bottomBorder {
+                            margin-left: 110px;
+                        }
+                    }
+                    h3 {
+                        font-size: 23px;
+                    }
+                    .price {
+                        font-size: 30px;
+                        span {
+                            font-size: 20px;
+                        }
+                    }
+                }
+                #section2 {
+                    h3 {
+                        font-size: 23px;
+                    }
+                    h4 {
+                        font-size: 20px;
+                    }
+                }
+                h2 {
+                    font-size: 30px;
+                }
+            }
+            #theTransformation{
+                height: 620px;
+            }
+        }
+        #schedule {
+            bottom: 1100px;
+            font-size: 40px;
+            button {
+                font-size: 39px;
+            }
+        }
+        .bottomContainer {
+            bottom: 1050px;
+        }
+    }
+    #emailContainer {
+        #imageContainer {
+            img {
+                width: 100%;
+            }
+        }
+        #formContainer {
+            h2 {
+                font-size: 45px;
+            }
+            h3 {
+                font-size: 25px;
+            }
+            form {
+                input {
+                    height: 30px;
+                    font-size: 22px;
+                }
+                textarea {
+                    font-size: 22px;
+                }
+                #emailSubjectContainer {
+                    width: 160%;
+                    input {
+                        width: 29.5%;
+                    }
+                }
+                #sub {
+                    margin-left: 300px;
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+    #existingClientMainContainer {
+        #imgContainer {
+            img {
+                height: 1000px;
+            }
+        }
+        #existingClientsHeader {
+            bottom: 900px;
+            font-size: 40px;
+            h1 {
+                font-weight: 100;
+            }
+            h3 {
+                padding: 0px 200px 0px 200px;
+                font-size: 35px;
+            }
+        }
+        #existingPackages{
+            bottom: 900px;
+            .package {
+                width: 550px;
+                height: 350px;
+                .packageHeader {
+                    font-size: 30px;
+                }
+                .bottomBorder {
+                    margin: 20px 0px 15px 135px;
+                }
+                .sessions {
+                    font-size: 27px;
+                }
+            }
+        }
+        #scheduling {
+            bottom: 925px;
+            #header {
+                h3 {
+                    font-size: 45px;
+                }
+            }
+            #request {
+                button {
+                    font-size: 35px;
+                }
+            }
+        }
+        .bottomContainer {
+            bottom: 900px;
+        }
+    }
+    #aboutOverall {
+        #aboutMainContainer {
+            top: 130px;
+            #aboutDescription {
+                h1 {
+                    font-size: 50px;
+                }
+                h2 {
+                    font-size: 35px;
+                    width: 30%;
+                }
+                p {
+                    font-size: 26px;
+                }
+            }
+            #aboutImageContainer {
+                img {
+                    height: 700px;
+                    width: 900px;
+                }
+            }
+        }
+        .bottomContainer {
+            top: 880px;
+        }
+    }
+    #faqOverall{
+        #faqMainContainer {
+            width: 1500px;
+            #faqImageContainer {
+                img{
+                    height: 250px;
+                }
+            }
+            #faqHeader {
+                h1 {
+                    font-size: 70px;
+                }
+            }
+            #questionsContainer {
+                .questionA {
+                    h2{
+                        font-size: 30px;
+                    }
+                    ul {
+                        h3 {
+                            font-size: 27px;
+                        }
+                    }
+                }
+                .questionB {
+                    h2{
+                        font-size: 30px;
+                    }
+                    ul {
+                        h3 {
+                            font-size: 27px;
+                        }
+                    }
+                }
+            }
+        }
+        .bottomContainer {
+            position: relative;
+            top: 925px;
+        }
+    }
+    #mealPlanningContainer {
+        #imgContainer {
+            img {
+                height: 1000px;
+            }
+        }
+        #mealPlanningHeader {
+            bottom: 900px;
+            font-size: 40px;
+        }
+        #description {
+            bottom: 950px;
+            padding: 0px 300px 0px 300px;
+            font-size: 35px;
+        }
+        #contentContainer {
+            display: flex;
+            justify-content: center;
+            position:relative;
+            bottom: 950px;
+            #content {
+                width: 500px;
+                height: 350px;
+                #contentHeader {
+                    font-size: 25px;
+                }
+                .bottomBorder {
+                    margin: 20px 0px 15px 95px;
+                }
+                #contentPackage {
+                    font-size: 25px;
+                }
+            }
+        }
+        
+        #scheduling {
+            bottom: 900px;
+            #request {
+                button {
+                    font-size: 35px;
+                }
+            }
+        }
+        .bottomContainer {
+            bottom: 840px;
+        }
+    }
+    #testimonialContainer {
+        #testimonialImgContainer {
+            img {
+                height: 950px;
+            }
+        }
+        #testimonialHeaderSection {
+            bottom: 850px;
+            font-size: 40px;
+        }
+        #testimonialMain {
+            bottom: 850px;
+            .cardContainer {
+                width: 600px;
+                .testimonialContent {
+                    font-size: 21px;
+                }
+                .clientInformation {
+                    font-size: 18px;
+                }
+            }
+        }
+        #reviewButton {
+            bottom: 810px;
+            button {
+                font-size: 30px;
+            }
+        }
+        .bottomContainer {
+            bottom: 790px;
         }
     }
 }

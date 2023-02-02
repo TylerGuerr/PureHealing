@@ -1,7 +1,7 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: lato;
+  font-family: lato, "Times New Roman", Times, serif;
 }
 
 a {
@@ -102,10 +102,6 @@ a {
   transition: 0.5s;
   border-bottom: 1px solid lightgray;
   text-decoration: none;
-}
-#headerContainer #navigationMenus #services .dropdown-content svg {
-  padding: 0px 5px 0px 5px;
-  vertical-align: middle;
 }
 #headerContainer #navigationMenus #services .dropdown-content a:hover {
   background-color: #ddcaff;
@@ -237,7 +233,7 @@ a {
   text-align: center;
   padding: 0px 100px 0px 100px;
   bottom: 75px;
-  background-color: rgb(224, 224, 224);
+  background-color: whitesmoke;
 }
 #overviewMainContainer #servicesContainer {
   display: flex;
@@ -448,7 +444,6 @@ a {
 }
 #newClientMainContainer #schedule button:hover {
   box-shadow: rgba(25, 25, 45, 0.1) 0px 7px 15px -6px, rgba(0, 0, 0, 0.3) 0px 4.5px 9px -4.5px;
-  padding: 15.25px 40.25px;
   color: whitesmoke;
   background-color: rgb(134, 134, 251);
   transition: 0.3s;
@@ -458,27 +453,30 @@ a {
   bottom: 850px;
 }
 
-#imageContainer {
+#emailContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  top: 350px;
+  height: 500px;
+  opacity: 90%;
+}
+#emailContainer #imageContainer {
   position: relative;
 }
-#imageContainer img {
+#emailContainer #imageContainer img {
   position: relative;
-  height: 850px;
+  height: 1100px;
   width: 100%;
   opacity: 25%;
   object-fit: cover;
 }
-
-#emailContainer {
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  width: 100%;
-  top: 150px;
-  padding-bottom: 50px;
-  opacity: 90%;
-}
 #emailContainer #formContainer {
+  position: relative;
+  bottom: 700px;
   background-color: whitesmoke;
   border: 3px solid #e7e0fc;
   padding: 10px 40px 20px 40px;
@@ -536,9 +534,9 @@ a {
 }
 #emailContainer #formContainer form #sub {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  width: 25%;
-  margin-left: 220px;
   margin-top: 30px;
+  margin-left: 210px;
+  width: 150px;
   height: 60px;
   font-size: 25px;
   border: none;
@@ -779,7 +777,7 @@ a {
   position: relative;
   height: 850px;
   width: 100%;
-  opacity: 45%;
+  opacity: 35%;
   object-fit: cover;
 }
 #mealPlanningContainer #mealPlanningHeader {
@@ -893,7 +891,7 @@ a {
 #testimonialContainer #testimonialHeaderSection {
   position: relative;
   font-weight: 200;
-  bottom: 750px;
+  bottom: 775px;
   font-size: 30px;
   display: flex;
   justify-content: space-around;
@@ -908,7 +906,7 @@ a {
   display: flex;
   justify-content: space-evenly;
   position: relative;
-  bottom: 725px;
+  bottom: 775px;
 }
 #testimonialContainer #testimonialMain .cardContainer {
   display: flex;
@@ -933,29 +931,53 @@ a {
   text-align: end;
   font-size: 16px;
 }
+#testimonialContainer #reviewButton {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 750px;
+}
+#testimonialContainer #reviewButton button {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 15px 40px;
+  margin-bottom: 20px;
+  font-size: 26px;
+  background-color: rgb(146, 146, 255);
+  cursor: pointer;
+  color: rgb(235, 235, 235);
+  border: none;
+  border-radius: 2px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+#testimonialContainer #reviewButton button:hover {
+  box-shadow: rgba(25, 25, 45, 0.1) 0px 7px 15px -6px, rgba(0, 0, 0, 0.3) 0px 4.5px 9px -4.5px;
+  color: whitesmoke;
+  background-color: rgb(134, 134, 251);
+  transition: 0.3s;
+}
 #testimonialContainer .bottomContainer {
   position: relative;
-  bottom: 660px;
+  bottom: 740px;
 }
 
-@media (max-width: 750px) {
+@media (min-width: 320px) and (max-width: 480px) {
   .bottomContainer {
     padding: 0px 0px 60px 0px;
     display: flex;
     justify-content: space-evenly;
-    width: 510px;
+    width: 100%;
     height: 90px;
   }
   .bottomContainer svg {
     transform: scale(1);
-    padding-right: 25px;
+    padding-top: 3px;
   }
   .bottomContainer #bottomLogoConatiner {
-    transform: scale(0.4);
+    transform: scale(0.35);
   }
   .bottomContainer #contact, .bottomContainer #businessHours {
     position: relative;
-    right: 100px;
+    right: 120px;
     padding-right: 25px;
   }
   .bottomContainer #contact h2, .bottomContainer #businessHours h2 {
@@ -965,20 +987,20 @@ a {
     font-size: 10px;
   }
   #headerContainer {
-    width: 510px;
+    width: 100%;
     height: 60px;
   }
   #headerContainer #pureLogo {
     transform: scale(0.4);
     position: relative;
-    left: 0px;
+    right: 10px;
     bottom: 7px;
   }
   #headerContainer #navigationMenus #home, #headerContainer #navigationMenus #about, #headerContainer #navigationMenus #services, #headerContainer #navigationMenus #faq, #headerContainer #navigationMenus #testimonials {
     padding: 20px 5px;
     display: inline-block;
     position: relative;
-    right: 110px;
+    right: 140px;
     bottom: 8px;
   }
   #headerContainer #navigationMenus #home h3, #headerContainer #navigationMenus #about h3, #headerContainer #navigationMenus #services h3, #headerContainer #navigationMenus #faq h3, #headerContainer #navigationMenus #testimonials h3 {
@@ -987,13 +1009,13 @@ a {
   }
   #headerContainer #navigationMenus #services .dropdown-content {
     top: 55px;
-    width: 175%;
-    font-size: 10px;
+    width: 220%;
+    font-size: 13px;
   }
   #headerContainer #navigationMenus #services .dropdown-content a {
     display: block;
     color: #000000;
-    padding: 5px;
+    padding: 8px;
     height: 15px;
   }
   #mainContainer {
@@ -1065,7 +1087,7 @@ a {
   }
   #overviewMainContainer #servicesContainer #service1, #overviewMainContainer #servicesContainer #service2, #overviewMainContainer #servicesContainer #service3, #overviewMainContainer #servicesContainer #service4 {
     margin: 10px 20px 10px 20px;
-    width: 415px;
+    width: 385px;
   }
   #overviewMainContainer .bottomContainer {
     bottom: 120px;
@@ -1084,8 +1106,8 @@ a {
   }
   #newClientMainContainer #packages {
     bottom: 925px;
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-left: 0;
+    margin-right: 0;
   }
   #newClientMainContainer #packages #theBasic #section1, #newClientMainContainer #packages #theTransformation #section1, #newClientMainContainer #packages #theFoundation #section1 {
     width: 150px;
@@ -1142,14 +1164,20 @@ a {
     flex-direction: column;
   }
   #existingClientMainContainer #existingPackages .package {
-    width: 435px;
+    width: 400px;
     height: 275px;
   }
+  #existingClientMainContainer #existingPackages .package .bottomBorder {
+    margin: 20px 0px 15px 100px;
+  }
+  #existingClientMainContainer #existingPackages .package .sessions li {
+    margin-left: 50px;
+  }
   #existingClientMainContainer #scheduling {
-    bottom: 1275px;
+    bottom: 1285px;
   }
   #existingClientMainContainer .bottomContainer {
-    bottom: 1250px;
+    bottom: 1275px;
   }
   #mealPlanningContainer #imgContainer {
     top: 0px;
@@ -1173,10 +1201,10 @@ a {
     height: 275px;
   }
   #mealPlanningContainer #scheduling {
-    bottom: 800px;
+    bottom: 825px;
   }
   #mealPlanningContainer .bottomContainer {
-    bottom: 775px;
+    bottom: 800px;
   }
   #aboutOverall #aboutMainContainer {
     top: 60px;
@@ -1190,32 +1218,33 @@ a {
     position: relative;
     right: 55px;
     height: 500px;
-    width: 465px;
+    width: 440px;
   }
   #aboutOverall .bottomContainer {
-    top: 1290px;
+    top: 1390px;
   }
   #faqOverall {
     width: 100%;
   }
   #faqOverall #faqMainContainer {
     top: 0px;
-    width: 510px;
-    height: 850px;
+    width: 100%;
+    height: 800px;
+    box-shadow: none;
   }
   #testimonialContainer {
     height: 500px;
   }
   #testimonialContainer #testimonialImgContainer img {
-    height: 1250px;
+    height: 1300px;
   }
   #testimonialContainer #testimonialHeaderSection {
-    bottom: 1200px;
+    bottom: 1250px;
     font-size: 20px;
   }
   #testimonialContainer #testimonialMain {
     flex-direction: column;
-    bottom: 1200px;
+    bottom: 1250px;
   }
   #testimonialContainer #testimonialMain .cardContainer {
     width: 95%;
@@ -1224,8 +1253,1001 @@ a {
   #testimonialContainer #testimonialMain .cardContainer .clientInformation {
     width: 20%;
   }
+  #testimonialContainer #reviewButton {
+    bottom: 1235px;
+  }
   #testimonialContainer .bottomContainer {
-    bottom: 1150px;
+    bottom: 1230px;
+  }
+  #emailContainer #formContainer {
+    width: 70%;
+  }
+  #emailContainer #formContainer h2 {
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+    margin: 15px 0px 0px 0px;
+  }
+  #emailContainer #formContainer h3 {
+    text-align: center;
+    font-size: 20px;
+    padding: 0;
+    font-weight: 400;
+  }
+  #emailContainer #formContainer form {
+    display: flex;
+    flex-direction: column;
+  }
+  #emailContainer #formContainer form input {
+    height: 25px;
+    font-size: 18px;
+    padding: 5px;
+    margin: 10px 0px 10px 0px;
+    border: 2px solid #e7e0fc;
+    border-radius: 5px;
+  }
+  #emailContainer #formContainer form input:focus, #emailContainer #formContainer form textarea:focus {
+    outline: none;
+    background-color: #e9ddff;
+  }
+  #emailContainer #formContainer form textarea {
+    font-family: lato;
+    font-size: 18px;
+    padding: 5px;
+    margin-top: 10px;
+    height: 150px;
+    border: 2px solid #e7e0fc;
+    border-radius: 5px;
+  }
+  #emailContainer #formContainer form textarea::placeholder, #emailContainer #formContainer form input::placeholder {
+    opacity: 60%;
+  }
+  #emailContainer #formContainer form #emailSubjectContainer {
+    width: 160%;
+  }
+  #emailContainer #formContainer form #emailSubjectContainer input {
+    width: 27.6%;
+    margin-right: 12px;
+  }
+  #emailContainer #formContainer form #sub {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    width: 25%;
+    margin-left: 135px;
+    margin-top: 30px;
+    height: 60px;
+    font-size: 25px;
+    border: none;
+    color: white;
+    background-color: rgb(146, 146, 255);
+  }
+  #emailContainer #formContainer form #sub:hover {
+    background-color: rgb(134, 134, 251);
+    transition: 0.3s;
+    cursor: pointer;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .bottomContainer {
+    width: 120%;
+    height: 90px;
+    justify-content: center;
+    position: relative;
+    right: 100px;
+    margin: 0px 0px 60px 0px;
+  }
+  .bottomContainer svg {
+    transform: scale(1);
+  }
+  .bottomContainer #bottomLogoConatiner {
+    transform: scale(0.5);
+  }
+  .bottomContainer #contact, .bottomContainer #businessHours {
+    padding-right: 5px;
+    position: relative;
+    right: 50px;
+  }
+  .bottomContainer #contact h2, .bottomContainer #businessHours h2 {
+    font-size: 20px;
+  }
+  .bottomContainer #contact h3, .bottomContainer #businessHours h3 {
+    font-size: 15px;
+  }
+  #headerContainer {
+    width: 100%;
+    height: 70px;
+  }
+  #headerContainer #pureLogo {
+    transform: scale(0.5);
+    position: relative;
+    right: 10px;
+    bottom: 7px;
+  }
+  #headerContainer #navigationMenus #home, #headerContainer #navigationMenus #about, #headerContainer #navigationMenus #services, #headerContainer #navigationMenus #faq, #headerContainer #navigationMenus #testimonials {
+    padding: 20px 5px;
+    display: inline-block;
+    position: relative;
+    right: 100px;
+    bottom: 8px;
+  }
+  #headerContainer #navigationMenus #home h3, #headerContainer #navigationMenus #about h3, #headerContainer #navigationMenus #services h3, #headerContainer #navigationMenus #faq h3, #headerContainer #navigationMenus #testimonials h3 {
+    position: relative;
+    font-size: 14px;
+  }
+  #headerContainer #navigationMenus #services .dropdown-content {
+    top: 55px;
+    width: 200%;
+    font-size: 13px;
+  }
+  #headerContainer #navigationMenus #services .dropdown-content a {
+    display: block;
+    color: #000000;
+    padding: 5px;
+    height: 15px;
+  }
+  #mainContainer {
+    height: 730px;
+    width: 100%;
+  }
+  #mainContainer #imgContainer {
+    top: 50px;
+  }
+  #mainContainer #imgContainer img {
+    height: 500px;
+  }
+  #mainContainer #textContainer {
+    bottom: 415px;
+  }
+  #mainContainer #textContainer #text1 {
+    width: 50%;
+    margin-left: 10px;
+  }
+  #mainContainer #textContainer #text1 h1 {
+    font-size: 35px;
+  }
+  #mainContainer #textContainer #text1 p {
+    font-size: 20px;
+  }
+  #mainContainer #textContainer #text2 {
+    width: 41%;
+  }
+  #mainContainer #textContainer #text2 h2 {
+    font-size: 26px;
+  }
+  #mainContainer #textContainer #text2 #newClientsHeader {
+    width: 50%;
+  }
+  #mainContainer #textContainer #text2 #existingHeader {
+    width: 80%;
+  }
+  #mainContainer #textContainer #text2 #getStarted, #mainContainer #textContainer #text2 #requestSession {
+    font-size: 23px;
+    font-weight: 400;
+  }
+  #mainContainer #textContainer #text2 button {
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  #mainContainer .bottomContainer {
+    position: relative;
+    bottom: 390px;
+  }
+  #overviewMainContainer #overviewImgContainer {
+    top: 0px;
+  }
+  #overviewMainContainer #overviewImgContainer img {
+    height: 600px;
+  }
+  #overviewMainContainer #overviewTextContainer {
+    font-size: 25px;
+  }
+  #overviewMainContainer #serviceOverviewText {
+    font-size: 19px;
+    bottom: 130px;
+  }
+  #overviewMainContainer #servicesContainer {
+    flex-direction: column;
+    align-items: center;
+    height: 1500px;
+    width: 100%;
+    bottom: 130px;
+    padding-top: 20px;
+  }
+  #overviewMainContainer #servicesContainer #service1, #overviewMainContainer #servicesContainer #service2, #overviewMainContainer #servicesContainer #service3, #overviewMainContainer #servicesContainer #service4 {
+    margin: 15px 20px 15px 20px;
+    width: 450px;
+  }
+  #overviewMainContainer .bottomContainer {
+    bottom: 120px;
+  }
+  #newClientMainContainer {
+    width: 100%;
+    position: relative;
+    height: 500px;
+  }
+  #newClientMainContainer #newClientImgContainer {
+    top: 0px;
+  }
+  #newClientMainContainer #newClientTextContainer {
+    bottom: 950px;
+    font-size: 25px;
+  }
+  #newClientMainContainer #packages {
+    bottom: 925px;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  #newClientMainContainer #packages #theBasic #section1, #newClientMainContainer #packages #theTransformation #section1, #newClientMainContainer #packages #theFoundation #section1 {
+    width: 150px;
+  }
+  #newClientMainContainer #packages #theBasic #section1 .sectionHeader h2, #newClientMainContainer #packages #theTransformation #section1 .sectionHeader h2, #newClientMainContainer #packages #theFoundation #section1 .sectionHeader h2 {
+    width: 100%;
+    margin-left: 30px;
+    font-size: 17px;
+  }
+  #newClientMainContainer #packages #theBasic #section1 .sectionHeader .bottomBorder, #newClientMainContainer #packages #theTransformation #section1 .sectionHeader .bottomBorder, #newClientMainContainer #packages #theFoundation #section1 .sectionHeader .bottomBorder {
+    width: 50%;
+    margin-left: 70px;
+  }
+  #newClientMainContainer #packages #theBasic #section1 h3, #newClientMainContainer #packages #theTransformation #section1 h3, #newClientMainContainer #packages #theFoundation #section1 h3 {
+    width: 100%;
+    margin-left: 35px;
+    font-size: 15px;
+  }
+  #newClientMainContainer #packages #theBasic #section1 .price, #newClientMainContainer #packages #theTransformation #section1 .price, #newClientMainContainer #packages #theFoundation #section1 .price {
+    width: 100%;
+    margin-left: 33px;
+    font-size: 18px;
+  }
+  #newClientMainContainer #packages #theBasic #section1 .price span, #newClientMainContainer #packages #theTransformation #section1 .price span, #newClientMainContainer #packages #theFoundation #section1 .price span {
+    font-size: 15px;
+  }
+  #newClientMainContainer #packages #theBasic #section2 h3, #newClientMainContainer #packages #theTransformation #section2 h3, #newClientMainContainer #packages #theFoundation #section2 h3 {
+    font-size: 15px;
+  }
+  #newClientMainContainer #packages #theBasic #section2 h3 ul, #newClientMainContainer #packages #theTransformation #section2 h3 ul, #newClientMainContainer #packages #theFoundation #section2 h3 ul {
+    text-align: left;
+    padding-left: 15px;
+    font-size: 14px;
+  }
+  #newClientMainContainer #packages #theBasic #section2 h4, #newClientMainContainer #packages #theTransformation #section2 h4, #newClientMainContainer #packages #theFoundation #section2 h4 {
+    font-size: 13px;
+  }
+  #newClientMainContainer #schedule {
+    bottom: 925px;
+  }
+  #newClientMainContainer .bottomContainer {
+    bottom: 910px;
+  }
+  #existingClientMainContainer #imgContainer {
+    top: 0px;
+  }
+  #existingClientMainContainer #imgContainer img {
+    height: 1300px;
+  }
+  #existingClientMainContainer #existingClientsHeader {
+    bottom: 1250px;
+    font-size: 25px;
+  }
+  #existingClientMainContainer #existingClientsHeader h3 {
+    padding: 0px 75px 0px 75px;
+    font-size: 28px;
+  }
+  #existingClientMainContainer #existingPackages {
+    bottom: 1250px;
+    flex-direction: column;
+    align-items: center;
+  }
+  #existingClientMainContainer #existingPackages .package {
+    width: 400px;
+    height: 275px;
+  }
+  #existingClientMainContainer #existingPackages .package .bottomBorder {
+    margin: 20px 0px 15px 100px;
+  }
+  #existingClientMainContainer #existingPackages .package .sessions li {
+    margin-left: 50px;
+  }
+  #existingClientMainContainer #scheduling {
+    bottom: 1240px;
+  }
+  #existingClientMainContainer .bottomContainer {
+    bottom: 1175px;
+  }
+  #mealPlanningContainer #imgContainer {
+    top: 0px;
+  }
+  #mealPlanningContainer #imgContainer img {
+    height: 850px;
+  }
+  #mealPlanningContainer #mealPlanningHeader {
+    bottom: 800px;
+  }
+  #mealPlanningContainer #description {
+    bottom: 845px;
+    padding: 0px 25px 0px 25px;
+    font-size: 23px;
+  }
+  #mealPlanningContainer #contentContainer {
+    bottom: 850px;
+  }
+  #mealPlanningContainer #contentContainer #content {
+    width: 425px;
+    height: 275px;
+  }
+  #mealPlanningContainer #scheduling {
+    bottom: 825px;
+  }
+  #mealPlanningContainer .bottomContainer {
+    bottom: 750px;
+  }
+  #aboutOverall #aboutMainContainer {
+    top: 60px;
+    flex-direction: column;
+    width: 100%;
+  }
+  #aboutOverall #aboutMainContainer #aboutDescription {
+    width: 93%;
+  }
+  #aboutOverall #aboutMainContainer #aboutImageContainer {
+    width: 100%;
+  }
+  #aboutOverall #aboutMainContainer #aboutImageContainer img {
+    position: relative;
+    right: 55px;
+    height: 500px;
+    width: 95%;
+  }
+  #aboutOverall .bottomContainer {
+    top: 1150px;
+  }
+  #faqOverall {
+    width: 100%;
+  }
+  #faqOverall #faqMainContainer {
+    top: 0px;
+    width: 100%;
+    height: 800px;
+    box-shadow: none;
+  }
+  #testimonialContainer {
+    height: 500px;
+  }
+  #testimonialContainer #testimonialImgContainer img {
+    height: 1300px;
+  }
+  #testimonialContainer #testimonialHeaderSection {
+    bottom: 1250px;
+    font-size: 20px;
+  }
+  #testimonialContainer #testimonialMain {
+    flex-direction: column;
+    bottom: 1250px;
+  }
+  #testimonialContainer #testimonialMain .cardContainer {
+    width: 95%;
+    margin: 0px 0px 15px 13px;
+  }
+  #testimonialContainer #testimonialMain .cardContainer .clientInformation {
+    width: 20%;
+  }
+  #testimonialContainer #reviewButton {
+    bottom: 1240px;
+  }
+  #testimonialContainer .bottomContainer {
+    bottom: 1230px;
+  }
+  #emailContainer {
+    width: 100%;
+  }
+  #emailContainer #formContainer {
+    width: 70%;
+  }
+  #emailContainer #formContainer form #emailSubjectContainer {
+    width: 160%;
+  }
+  #emailContainer #formContainer form #emailSubjectContainer input {
+    width: 28.9%;
+  }
+  #emailContainer #formContainer form #sub {
+    margin-left: 190px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .bottomContainer {
+    width: 100%;
+    height: 90px;
+    justify-content: space-evenly;
+    position: relative;
+    right: 0px;
+  }
+  .bottomContainer svg {
+    padding-right: 15px;
+  }
+  #headerContainer {
+    width: 100%;
+    height: 90px;
+  }
+  #headerContainer #pureLogo {
+    transform: scale(0.6);
+  }
+  #headerContainer #navigationMenus #services .dropdown-content {
+    width: 220%;
+    font-size: 17px;
+  }
+  #headerContainer #navigationMenus #services .dropdown-content a {
+    height: 20px;
+  }
+  #mainContainer #imgContainer img {
+    height: 750px;
+  }
+  #mainContainer #textContainer {
+    bottom: 625px;
+    width: 100%;
+  }
+  #mainContainer #textContainer #text1 {
+    width: 50%;
+  }
+  #mainContainer .bottomContainer {
+    position: relative;
+    bottom: 540px;
+  }
+  #overviewMainContainer #servicesContainer {
+    flex-direction: column;
+    align-items: center;
+    height: 1500px;
+    width: 100%;
+    bottom: 130px;
+    padding-top: 20px;
+  }
+  #overviewMainContainer #servicesContainer #service1, #overviewMainContainer #servicesContainer #service2, #overviewMainContainer #servicesContainer #service3, #overviewMainContainer #servicesContainer #service4 {
+    margin: 15px 20px 15px 20px;
+    width: 450px;
+  }
+  #overviewMainContainer .bottomContainer {
+    bottom: 120px;
+  }
+  #newClientMainContainer #packages {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  #existingClientMainContainer .bottomContainer {
+    bottom: 800px;
+  }
+  #mealPlanningContainer #scheduling {
+    bottom: 750px;
+  }
+  #mealPlanningContainer .bottomContainer {
+    bottom: 725px;
+  }
+  #aboutOverall #aboutMainContainer {
+    top: 60px;
+    flex-direction: column;
+    width: 97%;
+  }
+  #aboutOverall #aboutMainContainer #aboutDescription {
+    width: 95%;
+  }
+  #aboutOverall #aboutMainContainer #aboutImageContainer {
+    width: 97%;
+  }
+  #aboutOverall #aboutMainContainer #aboutImageContainer img {
+    position: relative;
+    right: 55px;
+    height: 700px;
+    width: 95%;
+  }
+  #aboutOverall .bottomContainer {
+    top: 1300px;
+  }
+  #faqOverall {
+    width: 100%;
+  }
+  #faqOverall #faqMainContainer {
+    top: 0px;
+    width: 100%;
+    height: 800px;
+    box-shadow: none;
+  }
+  #testimonialContainer {
+    height: 500px;
+  }
+  #testimonialContainer #testimonialImgContainer img {
+    height: 1400px;
+  }
+  #testimonialContainer #testimonialHeaderSection {
+    bottom: 1300px;
+    font-size: 25px;
+  }
+  #testimonialContainer #testimonialMain {
+    flex-direction: column;
+    bottom: 1300px;
+    align-items: center;
+  }
+  #testimonialContainer #testimonialMain .cardContainer {
+    width: 50%;
+    margin: 0px 0px 15px 13px;
+  }
+  #testimonialContainer #testimonialMain .cardContainer .clientInformation {
+    width: 20%;
+  }
+  #testimonialContainer #reviewButton {
+    bottom: 1280px;
+  }
+  #testimonialContainer .bottomContainer {
+    bottom: 1260px;
+  }
+  #emailContainer #formContainer {
+    width: 70%;
+  }
+  #emailContainer #formContainer form #emailSubjectContainer input {
+    width: 29.5%;
+  }
+  #emailContainer #formContainer form #sub {
+    margin-left: 270px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1200px) {
+  #headerContainer {
+    width: 100%;
+    height: 90px;
+  }
+  #headerContainer #pureLogo {
+    transform: scale(0.6);
+  }
+  #headerContainer #navigationMenus #home h3, #headerContainer #navigationMenus #about h3, #headerContainer #navigationMenus #services h3, #headerContainer #navigationMenus #faq h3, #headerContainer #navigationMenus #testimonials h3 {
+    bottom: 5px;
+    font-size: 17px;
+  }
+  #headerContainer #navigationMenus #services .dropdown-content {
+    width: 220%;
+    font-size: 16px;
+    top: 60px;
+  }
+  #headerContainer #navigationMenus #services .dropdown-content a {
+    height: 25px;
+  }
+  #mainContainer #imgContainer img {
+    height: 730px;
+    bottom: 80px;
+  }
+  #mainContainer #textContainer {
+    bottom: 650px;
+  }
+  #mainContainer #textContainer #text1 h1 {
+    font-size: 40px;
+  }
+  #mainContainer #textContainer #text1 p {
+    font-size: 28px;
+  }
+  #mainContainer #textContainer #text2 h2 {
+    font-size: 30px;
+  }
+  #mainContainer #textContainer #text2 #newClientsHeader {
+    width: 40%;
+  }
+  #mainContainer #textContainer #text2 #existingHeader {
+    width: 40%;
+  }
+  #mainContainer #textContainer #text2 #getStarted, #mainContainer #textContainer #text2 #requestSession {
+    font-size: 25px;
+  }
+  #mainContainer #textContainer #text2 button {
+    font-size: 25px;
+  }
+  #mainContainer .bottomContainer {
+    bottom: 660px;
+  }
+  #overviewMainContainer #servicesContainer #service1, #overviewMainContainer #servicesContainer #service2, #overviewMainContainer #servicesContainer #service3, #overviewMainContainer #servicesContainer #service4 {
+    width: 700px;
+  }
+  #newClientMainContainer #packages {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  #mealPlanningContainer .bottomContainer {
+    bottom: 700px;
+  }
+  #aboutOverall #aboutMainContainer #aboutImageContainer img {
+    height: 640px;
+    width: 600px;
+  }
+  #aboutOverall .bottomContainer {
+    top: 800px;
+  }
+  #faqOverall #faqMainContainer {
+    top: 0px;
+    height: 800px;
+    box-shadow: none;
+  }
+  #testimonialContainer {
+    height: 500px;
+  }
+  #testimonialContainer #testimonialImgContainer img {
+    height: 1400px;
+  }
+  #testimonialContainer #testimonialHeaderSection {
+    bottom: 1300px;
+    font-size: 25px;
+  }
+  #testimonialContainer #testimonialMain {
+    flex-direction: column;
+    bottom: 1300px;
+    align-items: center;
+  }
+  #testimonialContainer #testimonialMain .cardContainer {
+    width: 50%;
+    margin: 0px 0px 15px 13px;
+  }
+  #testimonialContainer #testimonialMain .cardContainer .clientInformation {
+    width: 20%;
+  }
+  #testimonialContainer #reviewButton {
+    bottom: 1280px;
+  }
+  #testimonialContainer .bottomContainer {
+    bottom: 1260px;
+  }
+  #emailContainer #formContainer {
+    width: 70%;
+  }
+  #emailContainer #formContainer form #emailSubjectContainer input {
+    width: 29.75%;
+  }
+  #emailContainer #formContainer form #sub {
+    margin-left: 340px;
+  }
+}
+@media (min-width: 1500px) and (max-width: 1824px) {
+  .bottomContainer {
+    width: 100%;
+  }
+  .bottomContainer svg {
+    transform: scale(2);
+    padding-right: 25px;
+    padding-left: 15px;
+  }
+  .bottomContainer #bottomLogoConatiner {
+    transform: scale(1);
+  }
+  .bottomContainer #contact h2, .bottomContainer #businessHours h2 {
+    font-size: 30px;
+    font-weight: 400;
+  }
+  .bottomContainer #contact h3, .bottomContainer #businessHours h3 {
+    font-size: 25px;
+    font-weight: 200;
+  }
+  #headerContainer {
+    height: 130px;
+    width: 100%;
+  }
+  #headerContainer #pureLogo {
+    transform: scale(1);
+    padding-top: 15px;
+  }
+  #headerContainer #navigationMenus #home, #headerContainer #navigationMenus #about, #headerContainer #navigationMenus #services, #headerContainer #navigationMenus #faq, #headerContainer #navigationMenus #testimonials {
+    padding: 25px 15px;
+  }
+  #headerContainer #navigationMenus #home h3, #headerContainer #navigationMenus #about h3, #headerContainer #navigationMenus #services h3, #headerContainer #navigationMenus #faq h3, #headerContainer #navigationMenus #testimonials h3 {
+    font-size: 23px;
+  }
+  #headerContainer #navigationMenus #services .dropdown-content {
+    width: 220%;
+    top: 81px;
+    font-size: 23px;
+  }
+  #mainContainer #textContainer {
+    bottom: 600px;
+  }
+  #mainContainer #textContainer #text1 {
+    width: 40%;
+    margin-left: 60px;
+  }
+  #mainContainer #textContainer #text1 h1 {
+    font-size: 65px;
+  }
+  #mainContainer #textContainer #text1 p {
+    font-size: 34px;
+  }
+  #mainContainer #textContainer #text2 {
+    width: 41%;
+  }
+  #mainContainer #textContainer #text2 h2 {
+    font-size: 40px;
+    padding-bottom: 15px;
+  }
+  #mainContainer #textContainer #text2 #getStarted, #mainContainer #textContainer #text2 #requestSession {
+    font-size: 35px;
+  }
+  #mainContainer #textContainer #text2 button {
+    font-size: 30px;
+  }
+  #mainContainer .bottomContainer {
+    bottom: 550px;
+  }
+  #overviewMainContainer #overviewImgContainer img {
+    height: 700px;
+  }
+  #overviewMainContainer #overviewTextContainer {
+    font-size: 40px;
+  }
+  #overviewMainContainer #serviceOverviewText {
+    font-size: 30px;
+    bottom: 126px;
+  }
+  #overviewMainContainer #servicesContainer {
+    height: 550px;
+    bottom: 126px;
+  }
+  #overviewMainContainer #servicesContainer p {
+    font-size: 20px;
+  }
+  #overviewMainContainer #servicesContainer #svg1 svg, #overviewMainContainer #servicesContainer #svg2 svg, #overviewMainContainer #servicesContainer #svg3 svg {
+    transform: scale(3.5);
+  }
+  #overviewMainContainer #servicesContainer #service1, #overviewMainContainer #servicesContainer #service2, #overviewMainContainer #servicesContainer #service3, #overviewMainContainer #servicesContainer #service4 {
+    width: 20%;
+    height: 500px;
+  }
+  #overviewMainContainer #servicesContainer #service1 a:hover, #overviewMainContainer #servicesContainer #service2 a:hover, #overviewMainContainer #servicesContainer #service3 a:hover, #overviewMainContainer #servicesContainer #service4 a:hover {
+    font-size: 16.5px;
+  }
+  #overviewMainContainer #servicesContainer #service1 #serviceHeader, #overviewMainContainer #servicesContainer #service2 #serviceHeader, #overviewMainContainer #servicesContainer #service3 #serviceHeader, #overviewMainContainer #servicesContainer #service4 #serviceHeader {
+    font-size: 28px;
+  }
+  #overviewMainContainer #servicesContainer #service1 #serviceHeader2, #overviewMainContainer #servicesContainer #service2 #serviceHeader2, #overviewMainContainer #servicesContainer #service3 #serviceHeader2, #overviewMainContainer #servicesContainer #service4 #serviceHeader2 {
+    font-size: 28px;
+  }
+  #overviewMainContainer #servicesContainer #service1 #serviceHeader3, #overviewMainContainer #servicesContainer #service2 #serviceHeader3, #overviewMainContainer #servicesContainer #service3 #serviceHeader3, #overviewMainContainer #servicesContainer #service4 #serviceHeader3 {
+    font-size: 28px;
+  }
+  #overviewMainContainer #servicesContainer #service1 #serviceHeader4, #overviewMainContainer #servicesContainer #service2 #serviceHeader4, #overviewMainContainer #servicesContainer #service3 #serviceHeader4, #overviewMainContainer #servicesContainer #service4 #serviceHeader4 {
+    font-size: 28px;
+  }
+  #overviewMainContainer #servicesContainer #service1 #learnMore, #overviewMainContainer #servicesContainer #service2 #learnMore, #overviewMainContainer #servicesContainer #service3 #learnMore, #overviewMainContainer #servicesContainer #service4 #learnMore {
+    width: 60%;
+    font-size: 23px;
+  }
+  #overviewMainContainer .bottomContainer {
+    position: relative;
+    bottom: 100px;
+  }
+  #newClientMainContainer #newClientImgContainer img {
+    position: relative;
+    height: 1150px;
+    width: 100%;
+    opacity: 45%;
+    object-fit: cover;
+  }
+  #newClientMainContainer #newClientTextContainer {
+    bottom: 1050px;
+    font-size: 40px;
+  }
+  #newClientMainContainer #packages {
+    bottom: 1050px;
+  }
+  #newClientMainContainer #packages #theBasic, #newClientMainContainer #packages #theTransformation, #newClientMainContainer #packages #theFoundation {
+    height: 600px;
+  }
+  #newClientMainContainer #packages #theBasic #section1 .sectionHeader h2, #newClientMainContainer #packages #theTransformation #section1 .sectionHeader h2, #newClientMainContainer #packages #theFoundation #section1 .sectionHeader h2 {
+    font-size: 35px;
+  }
+  #newClientMainContainer #packages #theBasic #section1 .sectionHeader .bottomBorder, #newClientMainContainer #packages #theTransformation #section1 .sectionHeader .bottomBorder, #newClientMainContainer #packages #theFoundation #section1 .sectionHeader .bottomBorder {
+    margin-left: 110px;
+  }
+  #newClientMainContainer #packages #theBasic #section1 h3, #newClientMainContainer #packages #theTransformation #section1 h3, #newClientMainContainer #packages #theFoundation #section1 h3 {
+    font-size: 23px;
+  }
+  #newClientMainContainer #packages #theBasic #section1 .price, #newClientMainContainer #packages #theTransformation #section1 .price, #newClientMainContainer #packages #theFoundation #section1 .price {
+    font-size: 30px;
+  }
+  #newClientMainContainer #packages #theBasic #section1 .price span, #newClientMainContainer #packages #theTransformation #section1 .price span, #newClientMainContainer #packages #theFoundation #section1 .price span {
+    font-size: 20px;
+  }
+  #newClientMainContainer #packages #theBasic #section2 h3, #newClientMainContainer #packages #theTransformation #section2 h3, #newClientMainContainer #packages #theFoundation #section2 h3 {
+    font-size: 23px;
+  }
+  #newClientMainContainer #packages #theBasic #section2 h4, #newClientMainContainer #packages #theTransformation #section2 h4, #newClientMainContainer #packages #theFoundation #section2 h4 {
+    font-size: 20px;
+  }
+  #newClientMainContainer #packages #theBasic h2, #newClientMainContainer #packages #theTransformation h2, #newClientMainContainer #packages #theFoundation h2 {
+    font-size: 30px;
+  }
+  #newClientMainContainer #packages #theTransformation {
+    height: 620px;
+  }
+  #newClientMainContainer #schedule {
+    bottom: 1100px;
+    font-size: 40px;
+  }
+  #newClientMainContainer #schedule button {
+    font-size: 39px;
+  }
+  #newClientMainContainer .bottomContainer {
+    bottom: 1050px;
+  }
+  #emailContainer #imageContainer img {
+    width: 100%;
+  }
+  #emailContainer #formContainer h2 {
+    font-size: 45px;
+  }
+  #emailContainer #formContainer h3 {
+    font-size: 25px;
+  }
+  #emailContainer #formContainer form input {
+    height: 30px;
+    font-size: 22px;
+  }
+  #emailContainer #formContainer form textarea {
+    font-size: 22px;
+  }
+  #emailContainer #formContainer form #emailSubjectContainer {
+    width: 160%;
+  }
+  #emailContainer #formContainer form #emailSubjectContainer input {
+    width: 29.5%;
+  }
+  #emailContainer #formContainer form #sub {
+    margin-left: 300px;
+    font-size: 30px;
+  }
+  #existingClientMainContainer #imgContainer img {
+    height: 1000px;
+  }
+  #existingClientMainContainer #existingClientsHeader {
+    bottom: 900px;
+    font-size: 40px;
+  }
+  #existingClientMainContainer #existingClientsHeader h1 {
+    font-weight: 100;
+  }
+  #existingClientMainContainer #existingClientsHeader h3 {
+    padding: 0px 200px 0px 200px;
+    font-size: 35px;
+  }
+  #existingClientMainContainer #existingPackages {
+    bottom: 900px;
+  }
+  #existingClientMainContainer #existingPackages .package {
+    width: 550px;
+    height: 350px;
+  }
+  #existingClientMainContainer #existingPackages .package .packageHeader {
+    font-size: 30px;
+  }
+  #existingClientMainContainer #existingPackages .package .bottomBorder {
+    margin: 20px 0px 15px 135px;
+  }
+  #existingClientMainContainer #existingPackages .package .sessions {
+    font-size: 27px;
+  }
+  #existingClientMainContainer #scheduling {
+    bottom: 925px;
+  }
+  #existingClientMainContainer #scheduling #header h3 {
+    font-size: 45px;
+  }
+  #existingClientMainContainer #scheduling #request button {
+    font-size: 35px;
+  }
+  #existingClientMainContainer .bottomContainer {
+    bottom: 900px;
+  }
+  #aboutOverall #aboutMainContainer {
+    top: 130px;
+  }
+  #aboutOverall #aboutMainContainer #aboutDescription h1 {
+    font-size: 50px;
+  }
+  #aboutOverall #aboutMainContainer #aboutDescription h2 {
+    font-size: 35px;
+    width: 30%;
+  }
+  #aboutOverall #aboutMainContainer #aboutDescription p {
+    font-size: 26px;
+  }
+  #aboutOverall #aboutMainContainer #aboutImageContainer img {
+    height: 700px;
+    width: 900px;
+  }
+  #aboutOverall .bottomContainer {
+    top: 880px;
+  }
+  #faqOverall #faqMainContainer {
+    width: 1500px;
+  }
+  #faqOverall #faqMainContainer #faqImageContainer img {
+    height: 250px;
+  }
+  #faqOverall #faqMainContainer #faqHeader h1 {
+    font-size: 70px;
+  }
+  #faqOverall #faqMainContainer #questionsContainer .questionA h2 {
+    font-size: 30px;
+  }
+  #faqOverall #faqMainContainer #questionsContainer .questionA ul h3 {
+    font-size: 27px;
+  }
+  #faqOverall #faqMainContainer #questionsContainer .questionB h2 {
+    font-size: 30px;
+  }
+  #faqOverall #faqMainContainer #questionsContainer .questionB ul h3 {
+    font-size: 27px;
+  }
+  #faqOverall .bottomContainer {
+    position: relative;
+    top: 925px;
+  }
+  #mealPlanningContainer #imgContainer img {
+    height: 1000px;
+  }
+  #mealPlanningContainer #mealPlanningHeader {
+    bottom: 900px;
+    font-size: 40px;
+  }
+  #mealPlanningContainer #description {
+    bottom: 950px;
+    padding: 0px 300px 0px 300px;
+    font-size: 35px;
+  }
+  #mealPlanningContainer #contentContainer {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 950px;
+  }
+  #mealPlanningContainer #contentContainer #content {
+    width: 500px;
+    height: 350px;
+  }
+  #mealPlanningContainer #contentContainer #content #contentHeader {
+    font-size: 25px;
+  }
+  #mealPlanningContainer #contentContainer #content .bottomBorder {
+    margin: 20px 0px 15px 95px;
+  }
+  #mealPlanningContainer #contentContainer #content #contentPackage {
+    font-size: 25px;
+  }
+  #mealPlanningContainer #scheduling {
+    bottom: 900px;
+  }
+  #mealPlanningContainer #scheduling #request button {
+    font-size: 35px;
+  }
+  #mealPlanningContainer .bottomContainer {
+    bottom: 840px;
+  }
+  #testimonialContainer #testimonialImgContainer img {
+    height: 950px;
+  }
+  #testimonialContainer #testimonialHeaderSection {
+    bottom: 850px;
+    font-size: 40px;
+  }
+  #testimonialContainer #testimonialMain {
+    bottom: 850px;
+  }
+  #testimonialContainer #testimonialMain .cardContainer {
+    width: 600px;
+  }
+  #testimonialContainer #testimonialMain .cardContainer .testimonialContent {
+    font-size: 21px;
+  }
+  #testimonialContainer #testimonialMain .cardContainer .clientInformation {
+    font-size: 18px;
+  }
+  #testimonialContainer #reviewButton {
+    bottom: 810px;
+  }
+  #testimonialContainer #reviewButton button {
+    font-size: 30px;
+  }
+  #testimonialContainer .bottomContainer {
+    bottom: 790px;
   }
 }
 

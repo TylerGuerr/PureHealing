@@ -18,10 +18,10 @@ function CreateEmail() {
 
   return (
     <>
+        <div id="emailContainer">
         <div id="imageContainer">
             <img src={home}/>
         </div>
-        <div id="emailContainer">
         <div id="formContainer">
             <form ref={form} onSubmit={sendEmail}>
                 <h2>Contact Me</h2>
