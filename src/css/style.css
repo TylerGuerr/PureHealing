@@ -777,7 +777,7 @@ a {
   position: relative;
   height: 850px;
   width: 100%;
-  opacity: 35%;
+  opacity: 25%;
   object-fit: cover;
 }
 #mealPlanningContainer #mealPlanningHeader {
@@ -960,7 +960,391 @@ a {
   bottom: 740px;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 300px) and (max-width: 320px) {
+  .bottomContainer {
+    padding: 0px 0px 0px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+  }
+  .bottomContainer svg {
+    transform: scale(1.5);
+    padding-top: 3px;
+    padding-left: 8px;
+  }
+  .bottomContainer #bottomLogoConatiner {
+    transform: scale(0.7);
+    position: relative;
+    top: 40px;
+  }
+  .bottomContainer #contact, .bottomContainer #businessHours {
+    padding-right: 0px;
+  }
+  .bottomContainer #contact h2, .bottomContainer #businessHours h2 {
+    font-size: 23px;
+  }
+  .bottomContainer #contact h3, .bottomContainer #businessHours h3 {
+    font-size: 15px;
+  }
+  .bottomContainer #businessHours {
+    position: relative;
+    right: 30px;
+  }
+  #headerContainer {
+    width: 100%;
+    height: 50px;
+  }
+  #headerContainer #pureLogo {
+    transform: scale(0.25);
+    position: relative;
+    right: 0px;
+    bottom: 7px;
+  }
+  #headerContainer #navigationMenus #home, #headerContainer #navigationMenus #about, #headerContainer #navigationMenus #services, #headerContainer #navigationMenus #faq, #headerContainer #navigationMenus #testimonials {
+    padding: 20px 5px;
+    display: inline-block;
+    position: relative;
+    right: 160px;
+    bottom: 9px;
+  }
+  #headerContainer #navigationMenus #home h3, #headerContainer #navigationMenus #about h3, #headerContainer #navigationMenus #services h3, #headerContainer #navigationMenus #faq h3, #headerContainer #navigationMenus #testimonials h3 {
+    position: relative;
+    font-size: 8px;
+  }
+  #headerContainer #navigationMenus #services .dropdown-content {
+    top: 55px;
+    width: 220%;
+    font-size: 13px;
+  }
+  #headerContainer #navigationMenus #services .dropdown-content a {
+    display: block;
+    color: #000000;
+    padding: 8px;
+    height: 15px;
+  }
+  #mainContainer {
+    height: 730px;
+  }
+  #mainContainer #imgContainer {
+    top: 50px;
+  }
+  #mainContainer #imgContainer img {
+    height: 570px;
+  }
+  #mainContainer #textContainer {
+    bottom: 520px;
+  }
+  #mainContainer #textContainer #text1 {
+    width: 50%;
+    margin-left: 10px;
+  }
+  #mainContainer #textContainer #text1 h1 {
+    font-size: 30px;
+  }
+  #mainContainer #textContainer #text1 p {
+    font-size: 16px;
+  }
+  #mainContainer #textContainer #text2 {
+    width: 41%;
+  }
+  #mainContainer #textContainer #text2 h2 {
+    font-size: 23px;
+  }
+  #mainContainer #textContainer #text2 #newClientsHeader {
+    width: 50%;
+  }
+  #mainContainer #textContainer #text2 #existingHeader {
+    width: 80%;
+  }
+  #mainContainer #textContainer #text2 #getStarted, #mainContainer #textContainer #text2 #requestSession {
+    font-size: 22px;
+    font-weight: 400;
+  }
+  #mainContainer #textContainer #text2 button {
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  #mainContainer .bottomContainer {
+    position: relative;
+    bottom: 320px;
+  }
+  #overviewMainContainer #overviewImgContainer {
+    top: 0px;
+  }
+  #overviewMainContainer #overviewImgContainer img {
+    height: 600px;
+  }
+  #overviewMainContainer #overviewTextContainer {
+    font-size: 25px;
+  }
+  #overviewMainContainer #serviceOverviewText {
+    font-size: 19px;
+    bottom: 130px;
+    padding: 0px 25px 0px 25px;
+  }
+  #overviewMainContainer #servicesContainer {
+    flex-direction: column;
+    height: 1800px;
+    width: 100%;
+    bottom: 130px;
+    padding-top: 20px;
+  }
+  #overviewMainContainer #servicesContainer #service1, #overviewMainContainer #servicesContainer #service2, #overviewMainContainer #servicesContainer #service3, #overviewMainContainer #servicesContainer #service4 {
+    margin: 10px 20px 10px 20px;
+    width: 225px;
+  }
+  #overviewMainContainer .bottomContainer {
+    bottom: -80px;
+  }
+  #newClientMainContainer {
+    width: 100%;
+    position: relative;
+    height: 500px;
+  }
+  #newClientMainContainer #newClientImgContainer {
+    top: 0px;
+  }
+  #newClientMainContainer #newClientTextContainer {
+    bottom: 950px;
+    font-size: 20px;
+    text-align: center;
+  }
+  #newClientMainContainer #packages {
+    bottom: 925px;
+    margin-left: 0;
+    margin-right: 0;
+    flex-direction: column;
+  }
+  #newClientMainContainer #packages #theBasic, #newClientMainContainer #packages #theTransformation, #newClientMainContainer #packages #theFoundation {
+    width: 300px;
+  }
+  #newClientMainContainer #packages #theBasic #section1, #newClientMainContainer #packages #theTransformation #section1, #newClientMainContainer #packages #theFoundation #section1 {
+    width: 100%;
+  }
+  #newClientMainContainer #packages #theBasic #section1 .sectionHeader h2, #newClientMainContainer #packages #theTransformation #section1 .sectionHeader h2, #newClientMainContainer #packages #theFoundation #section1 .sectionHeader h2 {
+    font-size: 25px;
+  }
+  #newClientMainContainer #packages #theBasic #section1 .sectionHeader .bottomBorder, #newClientMainContainer #packages #theTransformation #section1 .sectionHeader .bottomBorder, #newClientMainContainer #packages #theFoundation #section1 .sectionHeader .bottomBorder {
+    width: 50%;
+    margin-left: 75px;
+  }
+  #newClientMainContainer #packages #theBasic #section1 h3, #newClientMainContainer #packages #theTransformation #section1 h3, #newClientMainContainer #packages #theFoundation #section1 h3 {
+    font-size: 17px;
+  }
+  #newClientMainContainer #packages #theBasic #section1 .price, #newClientMainContainer #packages #theTransformation #section1 .price, #newClientMainContainer #packages #theFoundation #section1 .price {
+    font-size: 20px;
+  }
+  #newClientMainContainer #packages #theBasic #section1 .price span, #newClientMainContainer #packages #theTransformation #section1 .price span, #newClientMainContainer #packages #theFoundation #section1 .price span {
+    font-size: 14px;
+  }
+  #newClientMainContainer #packages #theBasic #section2 h3, #newClientMainContainer #packages #theTransformation #section2 h3, #newClientMainContainer #packages #theFoundation #section2 h3 {
+    font-size: 18px;
+  }
+  #newClientMainContainer #packages #theBasic #section2 h3 ul, #newClientMainContainer #packages #theTransformation #section2 h3 ul, #newClientMainContainer #packages #theFoundation #section2 h3 ul {
+    text-align: left;
+    padding-left: 15px;
+    font-size: 17px;
+  }
+  #newClientMainContainer #packages #theBasic #section2 h4, #newClientMainContainer #packages #theTransformation #section2 h4, #newClientMainContainer #packages #theFoundation #section2 h4 {
+    font-size: 15px;
+  }
+  #newClientMainContainer #schedule {
+    bottom: 925px;
+    text-align: center;
+  }
+  #newClientMainContainer .bottomContainer {
+    bottom: 730px;
+  }
+  #existingClientMainContainer #imgContainer {
+    top: 0px;
+  }
+  #existingClientMainContainer #imgContainer img {
+    height: 1400px;
+  }
+  #existingClientMainContainer #existingClientsHeader {
+    bottom: 1350px;
+    font-size: 20px;
+  }
+  #existingClientMainContainer #existingClientsHeader h3 {
+    padding: 0px 25px 0px 25px;
+    font-size: 25px;
+  }
+  #existingClientMainContainer #existingPackages {
+    bottom: 1350px;
+    flex-direction: column;
+  }
+  #existingClientMainContainer #existingPackages .package {
+    width: 245px;
+    height: 320px;
+  }
+  #existingClientMainContainer #existingPackages .package .bottomBorder {
+    margin: 20px 0px 15px 60px;
+  }
+  #existingClientMainContainer #existingPackages .package .sessions li {
+    margin-left: 0px;
+  }
+  #existingClientMainContainer #scheduling {
+    bottom: 1375px;
+  }
+  #existingClientMainContainer .bottomContainer {
+    bottom: 1175px;
+  }
+  #mealPlanningContainer #imgContainer {
+    top: 0px;
+  }
+  #mealPlanningContainer #imgContainer img {
+    height: 1050px;
+  }
+  #mealPlanningContainer #mealPlanningHeader {
+    bottom: 1000px;
+    text-align: center;
+  }
+  #mealPlanningContainer #description {
+    bottom: 1045px;
+    padding: 0px 25px 0px 25px;
+    font-size: 23px;
+  }
+  #mealPlanningContainer #contentContainer {
+    bottom: 1050px;
+  }
+  #mealPlanningContainer #contentContainer #content {
+    width: 95%;
+    height: 250px;
+  }
+  #mealPlanningContainer #contentContainer #content .bottomBorder {
+    margin: 20px 0px 15px 55px;
+  }
+  #mealPlanningContainer #contentContainer #content #contentPackage {
+    font-size: 20px;
+  }
+  #mealPlanningContainer #contentContainer #content #contentPackage li {
+    margin-left: 10px;
+  }
+  #mealPlanningContainer #scheduling {
+    bottom: 1010px;
+  }
+  #mealPlanningContainer .bottomContainer {
+    bottom: 775px;
+  }
+  #aboutOverall #aboutMainContainer {
+    top: 60px;
+    flex-direction: column;
+    width: 92%;
+  }
+  #aboutOverall #aboutMainContainer #aboutDescription {
+    margin-left: -5px;
+  }
+  #aboutOverall #aboutMainContainer #aboutDescription h2 {
+    padding-left: 45px;
+  }
+  #aboutOverall #aboutMainContainer #aboutImageContainer img {
+    height: 500px;
+    width: 300px;
+    position: relative;
+    right: 70px;
+  }
+  #aboutOverall .bottomContainer {
+    top: 1800px;
+  }
+  #faqOverall {
+    width: 100%;
+  }
+  #faqOverall #faqMainContainer {
+    top: 0px;
+    width: 100%;
+    height: 1000px;
+    box-shadow: none;
+  }
+  #testimonialContainer {
+    height: 500px;
+  }
+  #testimonialContainer #testimonialImgContainer img {
+    height: 1300px;
+  }
+  #testimonialContainer #testimonialHeaderSection {
+    bottom: 1250px;
+    font-size: 20px;
+    text-align: center;
+  }
+  #testimonialContainer #testimonialMain {
+    flex-direction: column;
+    bottom: 1250px;
+  }
+  #testimonialContainer #testimonialMain .cardContainer {
+    height: 800px;
+    width: 100%;
+    margin: 0px 0px 10px 0px;
+  }
+  #testimonialContainer #testimonialMain .cardContainer .clientInformation {
+    width: 20%;
+  }
+  #testimonialContainer #reviewButton {
+    bottom: 1235px;
+  }
+  #testimonialContainer .bottomContainer {
+    bottom: 1030px;
+  }
+  #emailContainer #formContainer {
+    width: 70%;
+  }
+  #emailContainer #formContainer h2 {
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+    margin: 15px 0px 0px 0px;
+  }
+  #emailContainer #formContainer h3 {
+    text-align: center;
+    font-size: 20px;
+    padding: 0;
+    font-weight: 400;
+  }
+  #emailContainer #formContainer form {
+    display: flex;
+    flex-direction: column;
+  }
+  #emailContainer #formContainer form input {
+    height: 25px;
+    font-size: 18px;
+    padding: 5px;
+    margin: 10px 0px 10px 0px;
+    border: 2px solid #e7e0fc;
+    border-radius: 5px;
+  }
+  #emailContainer #formContainer form input:focus, #emailContainer #formContainer form textarea:focus {
+    outline: none;
+    background-color: #e9ddff;
+  }
+  #emailContainer #formContainer form textarea {
+    font-family: lato;
+    font-size: 18px;
+    padding: 5px;
+    margin-top: 10px;
+    height: 150px;
+    border: 2px solid #e7e0fc;
+    border-radius: 5px;
+  }
+  #emailContainer #formContainer form textarea::placeholder, #emailContainer #formContainer form input::placeholder {
+    opacity: 60%;
+  }
+  #emailContainer #formContainer form #emailSubjectContainer {
+    width: 160%;
+  }
+  #emailContainer #formContainer form #emailSubjectContainer input {
+    width: 25.5%;
+    margin-right: 12px;
+  }
+  #emailContainer #formContainer form #sub {
+    width: 50%;
+    margin-left: 55px;
+  }
+}
+@media (min-width: 321px) and (max-width: 480px) {
   .bottomContainer {
     padding: 0px 0px 60px 0px;
     display: flex;
