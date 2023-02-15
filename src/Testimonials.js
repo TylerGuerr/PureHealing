@@ -33,6 +33,14 @@ function CreateTestimonials() {
                         <h3>-Lauren</h3>
                     </div>
                 </div>
+                <div class="cardContainer">
+                    <div class="testimonialContent">
+                        <p>"I started working with Megan after having digestive issues for more than 6 years. During this time, I had done so many different things (labs, tests, procedures, medications, etc), that ultimately have not solved the root problem of my GI issues. When I came to Megan I had honestly just accepted that my stomach issues might always be a problem I had to live with. Megan had a very different approach than other GI practitioners I had worked with- she suggested testing I had never tried before and went over the results with me very thoroughly. When it came time to come up with a treatment plan, she met me where I was and didn’t throw too many things at me at once. I felt she really listened to my concerns and was willing to work with me to ensure I was going to be successful. She was very responsive when I had follow up questions and was a pleasure to work with. I would, and frequently do, recommend anyone dealing with complex digestive issues to work with her. She’s the best"</p>
+                    </div>
+                    <div class="clientInformation">
+                        <h3>-Holden</h3>
+                    </div>
+                </div>
             </div>
             <div id="reviewButton">
                 <a href="/Email"><button>Leave A Review!</button></a>
