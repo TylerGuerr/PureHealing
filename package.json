@@ -1,5 +1,6 @@
 {
   "name": "pure-healing-nutrition",
+  "homepage": "http://purehealingnutrition.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
