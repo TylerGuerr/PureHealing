@@ -1,4 +1,6 @@
 import React from "react";
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import './css/style.css';
 import photo from './photos/Testimonials.jpg';
 import logo from './photos/PureHealingLogoEmpty.jpg'
@@ -16,7 +18,10 @@ function CreateTestimonials() {
                     <h1>What My Clients Are Saying</h1>
                 </div>
             </div>
-            <div id="testimonialMain">
+            <Carousel 
+                infiniteLoop
+                showStatus={false}
+                showIndicators={false}>
                 <div class="cardContainer">
                     <div class="testimonialContent">
                         <p>"After struggling with gastrointestinal issues for so long and not finding answers from different practitioners including GI doctors and naturopathic docs, and undergoing every possible diagnostic procedure, I finally turned to the expertise of Megan. Not only did she perform the most thorough and comprehensive assessment, and detailed intervention, she included me in planning and educating me on physiology, and etiology of suspected GI conditions, and mechanism of interventions. And rest assured, after a few trials, I finally found answers and relief. As a fellow dietitian, who has had the pleasure of working with Megan. I can attest that she is one of the most brilliant and passionate clinicians I have worked with. She is that perfect mix of knowledge and passion. She is the kind that would not leave any stone unturned to provide the best nutritional care for her patients. She is the one I would trust my patients with and dietitian I would trust for me."</p>
@@ -41,7 +46,7 @@ function CreateTestimonials() {
                         <h3>-Holden</h3>
                     </div>
                 </div>
-            </div>
+            </Carousel>
             <div id="reviewButton">
                 <a href="/Email"><button>Leave A Review!</button></a>
             </div>

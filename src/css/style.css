@@ -104,7 +104,7 @@ a {
   text-decoration: none;
 }
 #headerContainer #navigationMenus #services .dropdown-content a:hover {
-  background-color: #ddcaff;
+  background-image: linear-gradient(to right, #efebfb, #ddcaff);
   height: 28px;
   transition: 0.3s;
 }
@@ -901,40 +901,51 @@ a {
 #testimonialContainer #testimonialHeaderSection h1 {
   font-weight: 100;
 }
-#testimonialContainer #testimonialMain {
-  display: flex;
-  justify-content: space-evenly;
+#testimonialContainer .carousel {
   position: relative;
   bottom: 775px;
+  margin-bottom: -800px;
 }
-#testimonialContainer #testimonialMain .cardContainer {
+#testimonialContainer .carousel .control-prev, #testimonialContainer .carousel .control-next {
+  transform: scale(2);
+  opacity: 50%;
+  z-index: 1;
+  background-color: rgb(149, 149, 149);
+}
+#testimonialContainer .carousel .control-prev:hover, #testimonialContainer .carousel .control-next:hover {
+  transform: scale(2.2);
+  opacity: 80%;
+}
+#testimonialContainer .carousel .cardContainer {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   flex-direction: column;
+  margin-left: 500px;
   width: 450px;
   height: 510px;
   background-color: whitesmoke;
   border-radius: 5px;
   opacity: 80%;
 }
-#testimonialContainer #testimonialMain .cardContainer .testimonialContent {
+#testimonialContainer .carousel .cardContainer .testimonialContent {
   font-size: 17px;
   padding: 0px 30px 0px 30px;
   font-style: italic;
 }
-#testimonialContainer #testimonialMain .cardContainer .clientInformation {
-  padding: 0px 30px 0px 20px;
+#testimonialContainer .carousel .cardContainer .clientInformation {
+  padding: 0px 20px 0px 20px;
   margin-bottom: 10px;
   background-color: #ddcaff;
   width: 30%;
-  text-align: end;
+  text-align: center;
   font-size: 16px;
 }
 #testimonialContainer #reviewButton {
   display: flex;
   justify-content: center;
   position: relative;
-  bottom: 750px;
+  bottom: -540px;
 }
 #testimonialContainer #reviewButton button {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -956,7 +967,7 @@ a {
 }
 #testimonialContainer .bottomContainer {
   position: relative;
-  bottom: 740px;
+  bottom: -560px;
 }
 
 #loadingContainer {
@@ -1296,34 +1307,31 @@ a {
     height: 500px;
   }
   #testimonialContainer #testimonialImgContainer img {
-    height: 2000px;
+    height: 850px;
   }
   #testimonialContainer #testimonialHeaderSection {
-    bottom: 1950px;
-    font-size: 20px;
+    bottom: 790px;
+    font-size: 19px;
     text-align: center;
   }
-  #testimonialContainer #testimonialMain {
-    flex-direction: column;
-    bottom: 1950px;
+  #testimonialContainer .carousel {
+    bottom: 780px;
   }
-  #testimonialContainer #testimonialMain .cardContainer {
-    height: 540px;
-    width: 100%;
-    margin: 0px 0px 10px 0px;
+  #testimonialContainer .carousel .cardContainer {
+    width: 95%;
+    margin-left: 7px;
   }
-  #testimonialContainer #testimonialMain .cardContainer .testimonialContent {
-    font-size: 15px;
-  }
-  #testimonialContainer #testimonialMain .cardContainer .clientInformation {
-    width: 20%;
+  #testimonialContainer .carousel .cardContainer .testimonialContent {
     font-size: 14px;
   }
+  #testimonialContainer .carousel .cardContainer .clientInformation {
+    font-size: 12px;
+  }
   #testimonialContainer #reviewButton {
-    bottom: 1895px;
+    bottom: -545px;
   }
   #testimonialContainer .bottomContainer {
-    bottom: 1650px;
+    bottom: -750px;
   }
   #emailContainer #formContainer {
     width: 70%;
@@ -1665,33 +1673,30 @@ a {
     height: 500px;
   }
   #testimonialContainer #testimonialImgContainer img {
-    height: 1300px;
+    height: 850px;
   }
   #testimonialContainer #testimonialHeaderSection {
-    bottom: 1250px;
-    font-size: 20px;
+    bottom: 790px;
+    font-size: 19px;
   }
-  #testimonialContainer #testimonialMain {
-    flex-direction: column;
-    bottom: 1250px;
+  #testimonialContainer .carousel {
+    bottom: 780px;
   }
-  #testimonialContainer #testimonialMain .cardContainer {
+  #testimonialContainer .carousel .cardContainer {
     width: 95%;
-    height: 335px;
-    margin: 0px 0px 15px 13px;
+    margin-left: 13px;
   }
-  #testimonialContainer #testimonialMain .cardContainer .testimonialContent {
-    font-size: 14px;
+  #testimonialContainer .carousel .cardContainer .testimonialContent {
+    font-size: 17px;
   }
-  #testimonialContainer #testimonialMain .cardContainer .clientInformation {
-    width: 20%;
-    font-size: 14px;
+  #testimonialContainer .carousel .cardContainer .clientInformation {
+    font-size: 17px;
   }
   #testimonialContainer #reviewButton {
-    bottom: 1235px;
+    bottom: -565px;
   }
   #testimonialContainer .bottomContainer {
-    bottom: 1030px;
+    bottom: -800px;
   }
   #emailContainer #formContainer {
     width: 70%;
@@ -2049,29 +2054,31 @@ a {
     height: 500px;
   }
   #testimonialContainer #testimonialImgContainer img {
-    height: 1300px;
+    height: 850px;
   }
   #testimonialContainer #testimonialHeaderSection {
-    bottom: 1250px;
+    bottom: 790px;
     font-size: 20px;
   }
-  #testimonialContainer #testimonialMain {
-    flex-direction: column;
-    bottom: 1250px;
+  #testimonialContainer .carousel {
+    bottom: 780px;
   }
-  #testimonialContainer #testimonialMain .cardContainer {
-    width: 95%;
-    height: 335px;
-    margin: 0px 0px 15px 13px;
+  #testimonialContainer .carousel .cardContainer {
+    width: 500px;
+    margin-left: 140px;
   }
-  #testimonialContainer #testimonialMain .cardContainer .clientInformation {
-    width: 20%;
+  #testimonialContainer .carousel .cardContainer .testimonialContent {
+    font-size: 18px;
+  }
+  #testimonialContainer .carousel .cardContainer .clientInformation {
+    font-size: 18px;
   }
   #testimonialContainer #reviewButton {
-    bottom: 1240px;
+    bottom: -565px;
   }
   #testimonialContainer .bottomContainer {
-    bottom: 1230px;
+    bottom: -600px;
+    height: 160px;
   }
   #emailContainer {
     width: 100%;
@@ -2092,7 +2099,7 @@ a {
 @media (min-width: 769px) and (max-width: 1024px) {
   .bottomContainer {
     width: 100%;
-    height: 90px;
+    height: 210px;
     justify-content: space-evenly;
     position: relative;
     right: 0px;
@@ -2201,30 +2208,30 @@ a {
     height: 500px;
   }
   #testimonialContainer #testimonialImgContainer img {
-    height: 1400px;
+    height: 900px;
   }
   #testimonialContainer #testimonialHeaderSection {
-    bottom: 1300px;
+    bottom: 820px;
     font-size: 25px;
   }
-  #testimonialContainer #testimonialMain {
-    flex-direction: column;
-    bottom: 1300px;
-    align-items: center;
+  #testimonialContainer .carousel {
+    bottom: 805px;
   }
-  #testimonialContainer #testimonialMain .cardContainer {
-    width: 70%;
-    height: 335px;
-    margin: 0px 0px 15px 13px;
+  #testimonialContainer .carousel .cardContainer {
+    width: 500px;
+    margin-left: 260px;
   }
-  #testimonialContainer #testimonialMain .cardContainer .clientInformation {
-    width: 20%;
+  #testimonialContainer .carousel .cardContainer .testimonialContent {
+    font-size: 18px;
+  }
+  #testimonialContainer .carousel .cardContainer .clientInformation {
+    font-size: 18px;
   }
   #testimonialContainer #reviewButton {
-    bottom: 1280px;
+    bottom: -535px;
   }
   #testimonialContainer .bottomContainer {
-    bottom: 1260px;
+    bottom: -580px;
   }
   #emailContainer #formContainer {
     width: 70%;
@@ -2316,30 +2323,30 @@ a {
     height: 500px;
   }
   #testimonialContainer #testimonialImgContainer img {
-    height: 1400px;
+    height: 1000px;
   }
   #testimonialContainer #testimonialHeaderSection {
-    bottom: 1300px;
+    bottom: 900px;
     font-size: 25px;
   }
-  #testimonialContainer #testimonialMain {
-    flex-direction: column;
-    bottom: 1300px;
-    align-items: center;
+  #testimonialContainer .carousel {
+    bottom: 875px;
   }
-  #testimonialContainer #testimonialMain .cardContainer {
-    height: 335px;
-    width: 70%;
-    margin: 0px 0px 15px 13px;
+  #testimonialContainer .carousel .cardContainer {
+    width: 600px;
+    margin-left: 295px;
   }
-  #testimonialContainer #testimonialMain .cardContainer .clientInformation {
-    width: 20%;
+  #testimonialContainer .carousel .cardContainer .testimonialContent {
+    font-size: 20px;
+  }
+  #testimonialContainer .carousel .cardContainer .clientInformation {
+    font-size: 20px;
   }
   #testimonialContainer #reviewButton {
-    bottom: 1280px;
+    bottom: -500px;
   }
   #testimonialContainer .bottomContainer {
-    bottom: 1260px;
+    bottom: -570px;
   }
   #emailContainer #formContainer {
     width: 70%;
@@ -2680,26 +2687,25 @@ a {
     bottom: 850px;
     font-size: 40px;
   }
-  #testimonialContainer #testimonialMain {
-    bottom: 850px;
+  #testimonialContainer .carousel {
+    bottom: 875px;
+    margin-bottom: -800px;
   }
-  #testimonialContainer #testimonialMain .cardContainer {
-    width: 550px;
+  #testimonialContainer .carousel .cardContainer {
+    margin-left: 608px;
+    width: 600px;
   }
-  #testimonialContainer #testimonialMain .cardContainer .testimonialContent {
+  #testimonialContainer .carousel .cardContainer .testimonialContent {
     font-size: 20px;
   }
-  #testimonialContainer #testimonialMain .cardContainer .clientInformation {
-    font-size: 18px;
+  #testimonialContainer .carousel .cardContainer .clientInformation {
+    font-size: 20px;
   }
   #testimonialContainer #reviewButton {
-    bottom: 810px;
-  }
-  #testimonialContainer #reviewButton button {
-    font-size: 30px;
+    bottom: -450px;
   }
   #testimonialContainer .bottomContainer {
-    bottom: 790px;
+    bottom: -500px;
   }
 }
 
